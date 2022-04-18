@@ -1,3 +1,12 @@
 S_S10_D1 /home/cs398/kaldi/egs/numbers/mfcc/raw_mfcc_test.1.ark:9
 S_S10_D2 /home/cs398/kaldi/egs/numbers/mfcc/raw_mfcc_test.1.ark:9204
 S_S10_D3 /home/cs398/kaldi/egs/numbers/mfcc/raw_mfcc_test.1.ark:18763
+S_S10_D4 /home/cs398/kaldi/egs/numbers/mfcc/raw_mfcc_test.1.ark:28452
+S_S10_D5 /home/cs398/kaldi/egs/numbers/mfcc/raw_mfcc_test.1.ark:37647
+S_S10_D6 /home/cs398/kaldi/egs/numbers/mfcc/raw_mfcc_test.1.ark:47648
+S_S14_D1 /home/cs398/kaldi/egs/numbers/mfcc/raw_mfcc_test.1.ark:56752
+S_S14_D2 /home/cs398/kaldi/egs/numbers/mfcc/raw_mfcc_test.1.ark:63906
+S_S14_D3 /home/cs398/kaldi/egs/numbers/mfcc/raw_mfcc_test.1.ark:73166
+S_S14_D4 /home/cs398/kaldi/egs/numbers/mfcc/raw_mfcc_test.1.ark:82088
+S_S14_D5 /home/cs398/kaldi/egs/numbers/mfcc/raw_mfcc_test.1.ark:92128
+S_S14_D6 /home/cs398/kaldi/egs/numbers/mfcc/raw_mfcc_test.1.ark:100998

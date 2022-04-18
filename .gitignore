@@ -1,0 +1,7 @@
+mfcc/
+exp/
+feats.scp
+data/train/split*
+data/test/split*
+data/lang/tmp
+*.ark
