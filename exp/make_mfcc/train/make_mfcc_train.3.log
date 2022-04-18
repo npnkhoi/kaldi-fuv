@@ -1,0 +1,46 @@
+# compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/train/utt2dur.3 --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/train/wav_train.3.scp ark:- | copy-feats --write-num-frames=ark,t:exp/make_mfcc/train/utt2num_frames.3 --compress=true ark:- ark,scp:/home/cs398/kaldi/egs/numbers/mfcc/raw_mfcc_train.3.ark,/home/cs398/kaldi/egs/numbers/mfcc/raw_mfcc_train.3.scp 
+# Started at Thứ hai, 18 Tháng 4 năm 2022 12:58:57 +07
+#
+compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/train/utt2dur.3 --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/train/wav_train.3.scp ark:- 
+copy-feats --write-num-frames=ark,t:exp/make_mfcc/train/utt2num_frames.3 --compress=true ark:- ark,scp:/home/cs398/kaldi/egs/numbers/mfcc/raw_mfcc_train.3.ark,/home/cs398/kaldi/egs/numbers/mfcc/raw_mfcc_train.3.scp 
+WARNING (compute-mfcc-feats[5.5.1009~1-e4940]:Read():wave-reader.cc:260) Expected 1404658 bytes in RIFF chunk, but after first data block there will be 36 + 1404532 bytes (we do not support reading multiple data chunks).
+WARNING (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:182) Processed features for key S_S08_D1
+WARNING (compute-mfcc-feats[5.5.1009~1-e4940]:Read():wave-reader.cc:260) Expected 1550030 bytes in RIFF chunk, but after first data block there will be 36 + 1549904 bytes (we do not support reading multiple data chunks).
+WARNING (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:182) Processed features for key S_S08_D2
+WARNING (compute-mfcc-feats[5.5.1009~1-e4940]:Read():wave-reader.cc:260) Expected 1499754 bytes in RIFF chunk, but after first data block there will be 36 + 1499628 bytes (we do not support reading multiple data chunks).
+WARNING (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:182) Processed features for key S_S08_D3
+WARNING (compute-mfcc-feats[5.5.1009~1-e4940]:Read():wave-reader.cc:260) Expected 1410122 bytes in RIFF chunk, but after first data block there will be 36 + 1409996 bytes (we do not support reading multiple data chunks).
+WARNING (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:182) Processed features for key S_S08_D4
+WARNING (compute-mfcc-feats[5.5.1009~1-e4940]:Read():wave-reader.cc:260) Expected 1563146 bytes in RIFF chunk, but after first data block there will be 36 + 1563020 bytes (we do not support reading multiple data chunks).
+WARNING (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:182) Processed features for key S_S08_D5
+WARNING (compute-mfcc-feats[5.5.1009~1-e4940]:Read():wave-reader.cc:260) Expected 1440728 bytes in RIFF chunk, but after first data block there will be 36 + 1440600 bytes (we do not support reading multiple data chunks).
+WARNING (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:182) Processed features for key S_S08_D6
+WARNING (compute-mfcc-feats[5.5.1009~1-e4940]:Read():wave-reader.cc:260) Expected 542152 bytes in RIFF chunk, but after first data block there will be 36 + 541952 bytes (we do not support reading multiple data chunks).
+VLOG[2] (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:182) Processed features for key S_S09_D1
+WARNING (compute-mfcc-feats[5.5.1009~1-e4940]:Read():wave-reader.cc:260) Expected 629422 bytes in RIFF chunk, but after first data block there will be 36 + 629222 bytes (we do not support reading multiple data chunks).
+VLOG[2] (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:182) Processed features for key S_S09_D2
+WARNING (compute-mfcc-feats[5.5.1009~1-e4940]:Read():wave-reader.cc:260) Expected 632040 bytes in RIFF chunk, but after first data block there will be 36 + 631840 bytes (we do not support reading multiple data chunks).
+VLOG[2] (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:182) Processed features for key S_S09_D3
+WARNING (compute-mfcc-feats[5.5.1009~1-e4940]:Read():wave-reader.cc:260) Expected 615458 bytes in RIFF chunk, but after first data block there will be 36 + 615258 bytes (we do not support reading multiple data chunks).
+LOG (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:181) Processed 10 utterances
+VLOG[2] (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:182) Processed features for key S_S09_D4
+WARNING (compute-mfcc-feats[5.5.1009~1-e4940]:Read():wave-reader.cc:260) Expected 747238 bytes in RIFF chunk, but after first data block there will be 36 + 747038 bytes (we do not support reading multiple data chunks).
+VLOG[2] (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:182) Processed features for key S_S09_D5
+WARNING (compute-mfcc-feats[5.5.1009~1-e4940]:Read():wave-reader.cc:260) Expected 639898 bytes in RIFF chunk, but after first data block there will be 36 + 639694 bytes (we do not support reading multiple data chunks).
+VLOG[2] (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:182) Processed features for key S_S09_D6
+WARNING (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:182) Processed features for key S_S13_D1
+WARNING (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:182) Processed features for key S_S13_D2
+WARNING (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:182) Processed features for key S_S13_D3
+LOG (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:185)  Done 15 out of 15 utterances.
+LOG (copy-feats[5.5.1009~1-e4940]:main():copy-feats.cc:143) Copied 15 feature matrices.
+# Accounting: time=1 threads=1
+# Ended (code 0) at Thứ hai, 18 Tháng 4 năm 2022 12:58:58 +07, elapsed time 1 seconds
