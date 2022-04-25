@@ -7,14 +7,18 @@ Instructor: Professor Nanette
 
 from scipy.io import wavfile # Use this package to read and write the wav file
 # Use the following package to get the data analysis from the textgrid
-from GenTimestamp import timeStampDict
 import math
-
+import os
+import wavio as wv
 import textgrid # textgrid is a useful module to read the textgrid file type
 
-def gen_timestamp(filename):
-    filename += '.TextGrid'
-    tg = textgrid.TextGrid.fromFile(filename)
+def gen_timestamp(number):
+    try:
+        filename =  number + '.TextGrid'
+        tg = textgrid.TextGrid.fromFile(filename)
+    except:
+        filename =  number + '.textgrid'
+        tg = textgrid.TextGrid.fromFile(filename)
 
     SILENCE = "sil"
     LAST_CHARACTER_FILENAME = -10
@@ -62,15 +66,14 @@ def gen_timestamp(filename):
     return timeStampDict
 
 
-def split_audio_word(filename):
+def split_audio_word_and_save(save_folder_path, file_path):
     # Prompt the user to input the filename as well as read the wav file into Python
-    audioFileName = filename + ".wav"
-    rate, data = wavfile.read(audioFileName)
-    # Take the 6-prefix characters of the file name followed from the naming
-    # convention of the audio and textgrid file.
-    audioFileName_root = audioFileName[0:6]
+    audioFileName = file_path + ".wav"
+    rate, data = wavfile.read(audioFileName, 'r')
+    # Take the container folder name
+    audioFileName_root = audioFileName.split('/')[-2]
 
-    timeStampDict = gen_timestamp(filename)
+    timeStampDict = gen_timestamp(file_path)
 
     for word in timeStampDict:
         # This is totally based on the formula that we have looked up online.
@@ -79,8 +82,10 @@ def split_audio_word(filename):
         splitAudio = data[minAtFrame:maxAtFrame]
         # Rename the sequential audio files to match with the naming convention of
         # the dataset
-        finalNaming = audioFileName_root + "W" + str(word).zfill(2) + ".wav"
-        wavfile.write(finalNaming, rate, splitAudio)
+        finalNaming = f"{audioFileName_root}_W{str(word).zfill(2)}.wav"
+        save_path = os.path.join(save_folder_path, finalNaming)
+        wavfile.write(save_path, rate, splitAudio)   
+        print('Save file at', save_path) 
 
 
 
