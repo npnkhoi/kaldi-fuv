@@ -5,3 +5,4 @@ data/train/split*
 data/test/split*
 data/lang/tmp
 *.ark
+__pycache__/
