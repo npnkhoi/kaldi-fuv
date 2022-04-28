@@ -10,4 +10,4 @@ for folder in folder_names:
         filename = f'{folder}_D{str(i).zfill(1)}'
         file_path = os.path.join(root_path, folder, filename)
         save_folder = os.path.join(save_folder_path, folder)
-        SplitAudioWord.split_audio_word_and_save(save_folder_path, file_path)
+        SplitAudioWord.split_audio_word_and_save(save_folder, file_path)
