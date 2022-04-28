@@ -1,0 +1,425 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0
+xmax = 6.4089375
+tiers? <exists> 
+size = 2
+item []: 
+	item [1]:
+		class = "IntervalTier"
+		name = "Words" 
+		xmin = 0 
+		xmax = 6.4089375
+		intervals: size = 37
+		intervals[1]:
+			xmin = 0
+			xmax = 0.17321452702702703
+			text = "sil"
+		intervals[2]:
+			xmin = 0.17321452702702703
+			xmax = 0.34642905405405405
+			text = "sáu"
+		intervals[3]:
+			xmin = 0.34642905405405405
+			xmax = 0.5196435810810811
+			text = "sil"
+		intervals[4]:
+			xmin = 0.5196435810810811
+			xmax = 0.6928581081081081
+			text = "trăm"
+		intervals[5]:
+			xmin = 0.6928581081081081
+			xmax = 0.8660726351351351
+			text = "sil"
+		intervals[6]:
+			xmin = 0.8660726351351351
+			xmax = 1.0392871621621622
+			text = "tám"
+		intervals[7]:
+			xmin = 1.0392871621621622
+			xmax = 1.2125016891891893
+			text = "sil"
+		intervals[8]:
+			xmin = 1.2125016891891893
+			xmax = 1.3857162162162162
+			text = "mươi"
+		intervals[9]:
+			xmin = 1.3857162162162162
+			xmax = 1.5589307432432433
+			text = "sil"
+		intervals[10]:
+			xmin = 1.5589307432432433
+			xmax = 1.7321452702702704
+			text = "ba"
+		intervals[11]:
+			xmin = 1.7321452702702704
+			xmax = 1.9053597972972973
+			text = "sil"
+		intervals[12]:
+			xmin = 1.9053597972972973
+			xmax = 2.0785743243243244
+			text = "năm"
+		intervals[13]:
+			xmin = 2.0785743243243244
+			xmax = 2.2517888513513515
+			text = "sil"
+		intervals[14]:
+			xmin = 2.2517888513513515
+			xmax = 2.4250033783783786
+			text = "trăm"
+		intervals[15]:
+			xmin = 2.4250033783783786
+			xmax = 2.5982179054054053
+			text = "sil"
+		intervals[16]:
+			xmin = 2.5982179054054053
+			xmax = 2.7714324324324324
+			text = "mười"
+		intervals[17]:
+			xmin = 2.7714324324324324
+			xmax = 2.9446469594594595
+			text = "sil"
+		intervals[18]:
+			xmin = 2.9446469594594595
+			xmax = 3.1178614864864866
+			text = "sáu"
+		intervals[19]:
+			xmin = 3.1178614864864866
+			xmax = 3.2910760135135138
+			text = "sil"
+		intervals[20]:
+			xmin = 3.2910760135135138
+			xmax = 3.4642905405405404
+			text = "trăm"
+		intervals[21]:
+			xmin = 3.4642905405405404
+			xmax = 3.6375050675675675
+			text = "sil"
+		intervals[22]:
+			xmin = 3.6375050675675675
+			xmax = 3.8107195945945946
+			text = "chín"
+		intervals[23]:
+			xmin = 3.8107195945945946
+			xmax = 3.9839341216216217
+			text = "sil"
+		intervals[24]:
+			xmin = 3.9839341216216217
+			xmax = 4.157148648648649
+			text = "mươi"
+		intervals[25]:
+			xmin = 4.157148648648649
+			xmax = 4.330363175675676
+			text = "sil"
+		intervals[26]:
+			xmin = 4.330363175675676
+			xmax = 4.503577702702703
+			text = "mốt"
+		intervals[27]:
+			xmin = 4.503577702702703
+			xmax = 4.67679222972973
+			text = "sil"
+		intervals[28]:
+			xmin = 4.67679222972973
+			xmax = 4.850006756756756
+			text = "một"
+		intervals[29]:
+			xmin = 4.850006756756756
+			xmax = 5.0232212837837835
+			text = "sil"
+		intervals[30]:
+			xmin = 5.0232212837837835
+			xmax = 5.196435810810811
+			text = "trăm"
+		intervals[31]:
+			xmin = 5.196435810810811
+			xmax = 5.369650337837838
+			text = "sil"
+		intervals[32]:
+			xmin = 5.369650337837838
+			xmax = 5.542864864864865
+			text = "hai"
+		intervals[33]:
+			xmin = 5.542864864864865
+			xmax = 5.716079391891892
+			text = "sil"
+		intervals[34]:
+			xmin = 5.716079391891892
+			xmax = 5.889293918918919
+			text = "mươi"
+		intervals[35]:
+			xmin = 5.889293918918919
+			xmax = 6.062508445945946
+			text = "sil"
+		intervals[36]:
+			xmin = 6.062508445945946
+			xmax = 6.235722972972973
+			text = "bảy"
+		intervals[37]:
+			xmin = 6.235722972972973
+			xmax = 6.4089375
+			text = "sil"
+
+	item [2]:
+		class = "IntervalTier"
+		name = "Phones" 
+		xmin = 0
+		xmax = 6.4089375
+		intervals: size = 64
+		intervals[1]:
+			xmin = 0
+			xmax = 0.17321452702702703
+			text = "sil"
+		intervals[2]:
+			xmin = 0.17321452702702703
+			xmax = 0.25982179054054055
+			text = "ʂ"
+		intervals[3]:
+			xmin = 0.25982179054054055
+			xmax = 0.34642905405405405
+			text = "aːw˧˥"
+		intervals[4]:
+			xmin = 0.34642905405405405
+			xmax = 0.5196435810810811
+			text = "sil"
+		intervals[5]:
+			xmin = 0.5196435810810811
+			xmax = 0.5773817567567567
+			text = "ʈ"
+		intervals[6]:
+			xmin = 0.5773817567567567
+			xmax = 0.6351199324324324
+			text = "a"
+		intervals[7]:
+			xmin = 0.6351199324324324
+			xmax = 0.6928581081081081
+			text = "m"
+		intervals[8]:
+			xmin = 0.6928581081081081
+			xmax = 0.8660726351351351
+			text = "sil"
+		intervals[9]:
+			xmin = 0.8660726351351351
+			xmax = 0.9238108108108107
+			text = "t"
+		intervals[10]:
+			xmin = 0.9238108108108107
+			xmax = 0.9815489864864864
+			text = "aː˧˥"
+		intervals[11]:
+			xmin = 0.9815489864864864
+			xmax = 1.0392871621621622
+			text = "m"
+		intervals[12]:
+			xmin = 1.0392871621621622
+			xmax = 1.2125016891891893
+			text = "sil"
+		intervals[13]:
+			xmin = 1.2125016891891893
+			xmax = 1.2991089527027027
+			text = "m"
+		intervals[14]:
+			xmin = 1.2991089527027027
+			xmax = 1.3857162162162162
+			text = "ɨəj"
+		intervals[15]:
+			xmin = 1.3857162162162162
+			xmax = 1.5589307432432433
+			text = "sil"
+		intervals[16]:
+			xmin = 1.5589307432432433
+			xmax = 1.6455380067567569
+			text = "ɓ"
+		intervals[17]:
+			xmin = 1.6455380067567569
+			xmax = 1.7321452702702704
+			text = "aː"
+		intervals[18]:
+			xmin = 1.7321452702702704
+			xmax = 1.9053597972972973
+			text = "sil"
+		intervals[19]:
+			xmin = 1.9053597972972973
+			xmax = 1.963097972972973
+			text = "n"
+		intervals[20]:
+			xmin = 1.963097972972973
+			xmax = 2.0208361486486486
+			text = "a"
+		intervals[21]:
+			xmin = 2.0208361486486486
+			xmax = 2.0785743243243244
+			text = "m"
+		intervals[22]:
+			xmin = 2.0785743243243244
+			xmax = 2.2517888513513515
+			text = "sil"
+		intervals[23]:
+			xmin = 2.2517888513513515
+			xmax = 2.3095270270270274
+			text = "ʈ"
+		intervals[24]:
+			xmin = 2.3095270270270274
+			xmax = 2.3672652027027032
+			text = "a"
+		intervals[25]:
+			xmin = 2.3672652027027032
+			xmax = 2.4250033783783786
+			text = "m"
+		intervals[26]:
+			xmin = 2.4250033783783786
+			xmax = 2.5982179054054053
+			text = "sil"
+		intervals[27]:
+			xmin = 2.5982179054054053
+			xmax = 2.684825168918919
+			text = "m"
+		intervals[28]:
+			xmin = 2.684825168918919
+			xmax = 2.7714324324324324
+			text = "ɨəj˨˩"
+		intervals[29]:
+			xmin = 2.7714324324324324
+			xmax = 2.9446469594594595
+			text = "sil"
+		intervals[30]:
+			xmin = 2.9446469594594595
+			xmax = 3.031254222972973
+			text = "ʂ"
+		intervals[31]:
+			xmin = 3.031254222972973
+			xmax = 3.1178614864864866
+			text = "aːw˧˥"
+		intervals[32]:
+			xmin = 3.1178614864864866
+			xmax = 3.2910760135135138
+			text = "sil"
+		intervals[33]:
+			xmin = 3.2910760135135138
+			xmax = 3.348814189189189
+			text = "ʈ"
+		intervals[34]:
+			xmin = 3.348814189189189
+			xmax = 3.406552364864865
+			text = "a"
+		intervals[35]:
+			xmin = 3.406552364864865
+			xmax = 3.4642905405405404
+			text = "m"
+		intervals[36]:
+			xmin = 3.4642905405405404
+			xmax = 3.6375050675675675
+			text = "sil"
+		intervals[37]:
+			xmin = 3.6375050675675675
+			xmax = 3.6952432432432434
+			text = "t͡ɕ"
+		intervals[38]:
+			xmin = 3.6952432432432434
+			xmax = 3.7529814189189192
+			text = "i˧˥"
+		intervals[39]:
+			xmin = 3.7529814189189192
+			xmax = 3.8107195945945946
+			text = "n"
+		intervals[40]:
+			xmin = 3.8107195945945946
+			xmax = 3.9839341216216217
+			text = "sil"
+		intervals[41]:
+			xmin = 3.9839341216216217
+			xmax = 4.070541385135135
+			text = "m"
+		intervals[42]:
+			xmin = 4.070541385135135
+			xmax = 4.157148648648648
+			text = "ɨəj"
+		intervals[43]:
+			xmin = 4.157148648648648
+			xmax = 4.330363175675676
+			text = "sil"
+		intervals[44]:
+			xmin = 4.330363175675676
+			xmax = 4.388101351351351
+			text = "m"
+		intervals[45]:
+			xmin = 4.388101351351351
+			xmax = 4.445839527027027
+			text = "o˧˥"
+		intervals[46]:
+			xmin = 4.445839527027027
+			xmax = 4.503577702702703
+			text = "kp"
+		intervals[47]:
+			xmin = 4.503577702702703
+			xmax = 4.67679222972973
+			text = "sil"
+		intervals[48]:
+			xmin = 4.67679222972973
+			xmax = 4.734530405405405
+			text = "m"
+		intervals[49]:
+			xmin = 4.734530405405405
+			xmax = 4.79226858108108
+			text = "o˨˧"
+		intervals[50]:
+			xmin = 4.79226858108108
+			xmax = 4.850006756756756
+			text = "kp"
+		intervals[51]:
+			xmin = 4.850006756756756
+			xmax = 5.0232212837837835
+			text = "sil"
+		intervals[52]:
+			xmin = 5.0232212837837835
+			xmax = 5.080959459459459
+			text = "ʈ"
+		intervals[53]:
+			xmin = 5.080959459459459
+			xmax = 5.138697635135134
+			text = "a"
+		intervals[54]:
+			xmin = 5.138697635135134
+			xmax = 5.196435810810811
+			text = "m"
+		intervals[55]:
+			xmin = 5.196435810810811
+			xmax = 5.369650337837838
+			text = "sil"
+		intervals[56]:
+			xmin = 5.369650337837838
+			xmax = 5.456257601351351
+			text = "h"
+		intervals[57]:
+			xmin = 5.456257601351351
+			xmax = 5.542864864864864
+			text = "aːj"
+		intervals[58]:
+			xmin = 5.542864864864864
+			xmax = 5.716079391891892
+			text = "sil"
+		intervals[59]:
+			xmin = 5.716079391891892
+			xmax = 5.802686655405405
+			text = "m"
+		intervals[60]:
+			xmin = 5.802686655405405
+			xmax = 5.889293918918918
+			text = "ɨəj"
+		intervals[61]:
+			xmin = 5.889293918918918
+			xmax = 6.062508445945946
+			text = "sil"
+		intervals[62]:
+			xmin = 6.062508445945946
+			xmax = 6.149115709459459
+			text = "ɓ"
+		intervals[63]:
+			xmin = 6.149115709459459
+			xmax = 6.235722972972972
+			text = "aːj˧˩˧"
+		intervals[64]:
+			xmin = 6.235722972972972
+			xmax = 6.4089375
+			text = "sil"
