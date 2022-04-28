@@ -1,9 +1,9 @@
 import SplitAudioWord
 import os
 
-root_path = "/home/cs398/kaldi/egs/numbers/numbers_audio/train"
-save_folder_path = "/home/cs398/kaldi/egs/numbers/data_word/word_audio/train"
-folder_names = ['S_S01', 'S_S04', 'S_S05', 'S_S08', 'S_S13', 'S_S18', 'S_S19', 'S_S03',  'S_S06', 'S_S09', 'S_S17']
+root_path = "C:\\Users\\Thuan\\Documents\\GitHub\\kaldi-fuv\\custom"
+save_folder_path = "C:\\Users\\Thuan\\Documents\\GitHub\\kaldi-fuv\\custom\\Audio"
+folder_names = ['S_S05']
 
 for folder in folder_names:
     for i in range(1,7):

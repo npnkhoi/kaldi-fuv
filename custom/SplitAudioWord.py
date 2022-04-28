@@ -11,6 +11,10 @@ import math
 import os
 import wavio as wv
 import textgrid # textgrid is a useful module to read the textgrid file type
+import pandas as pd
+
+csvKeepTrackName = "TranscriptToName.csv"
+KeepTrackData = pd.read_csv(csvKeepTrackName)
 
 id_to_filename = {1: 'mootj_01', 2: 'trawm_01', 3: 'tams_01', 4: 'muowi_01', 5: 'hai_01'
               , 6: 'saus_01', 7: 'trawm_02', 8: 'ler_01', 9: 'saus_02', 10: 'mootj_02'
@@ -35,6 +39,17 @@ id_to_filename = {1: 'mootj_01', 2: 'trawm_01', 3: 'tams_01', 4: 'muowi_01', 5: 
               , 101: 'muowi_19', 102: 'ba_11', 103: 'hai_10', 104: 'trawm_21', 105: 'nawm_03'
               , 106: 'muowi_20', 107: 'bayr_08', 108: 'trawm_22', 109: 'bayr_09', 110: 'muowi_21'
               , 111: 'saus_11'}
+
+word_to_telex = {}
+for i in range(len(KeepTrackData)):
+    current_transcript = KeepTrackData.script[i]
+    current_telex = KeepTrackData.filename[i]
+    word_to_telex[current_transcript] = current_telex
+
+word_frequency = {}
+for i in range(len(KeepTrackData)):
+    current_telex = KeepTrackData.filename[i]
+    word_frequency[current_telex] = 0
 
 def gen_timestamp(number):
     try:
@@ -75,6 +90,7 @@ def gen_timestamp(number):
             # Access the current interval
             current_interval = tg[0][i]
             current_annotation = current_interval.mark
+            current_annotation = current_annotation.strip()
             current_annotation = current_annotation.lower()
             # Simply approach: Eliminate all of the sil intervals. Assign the rest
             # of the word transcipt into an encoding code with start and end
@@ -82,7 +98,10 @@ def gen_timestamp(number):
             if(current_annotation not in SILENCE):
                 start = current_interval.minTime 
                 end = current_interval.maxTime
-                timeStampDict[encoding] = [start, end]
+                telex_match = word_to_telex[current_annotation]
+                word_frequency[telex_match] = word_frequency[telex_match] + 1
+                saveName = telex_match + "_" + str(word_frequency[telex_match])
+                timeStampDict[saveName] = [start, end]
                 encoding += 1
             i += 1
         except IndexError:
@@ -107,10 +126,11 @@ def split_audio_word_and_save(save_folder_path, file_path):
         splitAudio = data[minAtFrame:maxAtFrame]
         # Rename the sequential audio files to match with the naming convention of
         # the dataset
-        finalNaming = audioFileName_root + "_W_" + id_to_filename[word] + ".wav"
+        finalNaming = audioFileName_root + "_W_" + word + ".wav"
         save_path = os.path.join(save_folder_path, finalNaming)
         wavfile.write(save_path, rate, splitAudio)   
         print('Save file at', save_path) 
 
+print
 
 
