@@ -17,22 +17,26 @@ import sys
 from scipy.io import wavfile
 import math
 import textgrid
+transcript24nums = [["một trăm tám mươi hai", "sáu trăm lẻ sáu", "một trăm ba mươi tám", "bảy mươi hai"],
+                    ["tám trăm tám mươi ba", "chín trăm tám mươi sáu",
+                        "một trăm ba mươi sáu", "bảy trăm bảy mươi ba"],
+                    ["một trăm chín lăm", "chín trăm bảy mươi sáu",
+                        "năm trăm sáu mươi ba", "hai trăm bốn mươi bảy"],
+                    ["sáu trăm tám mươi ba", "năm trăm mười",
+                        "sáu trăm chín mươi mốt", "một trăm hai mươi bảy"],
+                    ["tám trăm tám mươi hai", "một trăm sáu mươi bảy",
+                        "ba trăm hai mươi hai", "bốn trăm ba mươi hai"],
+                    ["ba mươi ba", "hai trăm sáu mươi ba", "hai trăm năm mươi", "bảy trăm bảy mươi sáu"]]
+
 def get_timestamp_dict(textgrid_filename):
-    tg = textgrid.TextGrid.fromFile(textgrid_filename)
+    try:
+        tg = textgrid.TextGrid.fromFile(textgrid_filename)
+    except:
+        tg = textgrid.TextGrid.fromFile(textgrid_filename[:-8] + 'TextGrid')
 
     # Because we have problems when comparing Vietnamese string by another txt file,
     # we have decided to include the transcription manually there for the precise
     # comparison.
-    transcript24nums = [["một trăm tám mươi hai", "sáu trăm lẻ sáu", "một trăm ba mươi tám", "bảy mươi hai"],
-                        ["tám trăm tám mươi ba", "chín trăm tám mươi sáu",
-                            "một trăm ba mươi sáu", "bảy trăm bảy mươi ba"],
-                        ["một trăm chín lăm", "chín trăm bảy mươi sáu",
-                            "năm trăm sáu mươi ba", "hai trăm bốn mươi bảy"],
-                        ["sáu trăm tám mươi ba", "năm trăm mười",
-                            "sáu trăm chín mươi mốt", "một trăm hai mươi bảy"],
-                        ["tám trăm tám mươi hai", "một trăm sáu mươi bảy",
-                            "ba trăm hai mươi hai", "bốn trăm ba mươi hai"],
-                        ["ba mươi ba", "hai trăm sáu mươi ba", "hai trăm năm mươi", "bảy trăm bảy mươi sáu"]]
     # This will depend on what file we are currently looking at.
     transcriptOneFile = []
 
@@ -100,7 +104,7 @@ def get_timestamp_dict(textgrid_filename):
                     else:
                         correct = False
                         print("This file " + textgrid_filename + " has error")
-                        exit()
+                        return None
 
             except IndexError:
                 break
@@ -114,12 +118,14 @@ def get_timestamp_dict(textgrid_filename):
 def split_subject(src_folder, dest_folder, subject):
     for d_id in range(1, 7): # because previously, a subject has 6 audio files
         audioFileName = src_folder + subject + '/' + f'{subject}_D{d_id}.wav'
-        gridFileName = src_folder + subject + '/' + f'{subject}_D{d_id}.TextGrid'
+        gridFileName = src_folder + subject + '/' + f'{subject}_D{d_id}.textgrid'
         rate, data = wavfile.read(audioFileName)
         audioFileName_root = dest_folder + subject
         subprocess.run(f'mkdir -p {audioFileName_root}'.split())
 
         timeStampDict = get_timestamp_dict(gridFileName)
+        if timeStampDict is None:
+            continue
         for word in timeStampDict:
             minAtFrame = math.floor(rate * timeStampDict[word][0])
             maxAtFrame = math.ceil(rate * timeStampDict[word][1])
