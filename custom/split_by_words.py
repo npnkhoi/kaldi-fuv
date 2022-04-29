@@ -1,14 +1,25 @@
+"""
+This script splits the audio in the source folder, put them
+in a destination folder, along with the data files (text, 
+wav.scp, spk2utt).
+
+The source folder is downloaded and modified from ASR Google Drive
+in the afternoon of April 27, 2022.
+
+Author: Khoi
+"""
 import math
 import os
 import subprocess
 from scipy.io import wavfile
 
-from custom.kutils import VN2TELEX, get_words_from_textgrid
+from custom.split_utils import VN2TELEX, get_words_from_textgrid
 
-src_folder = 'Data_Apr27'
-dest_folder = 'khoi_data'
+src_folder = 'Data_Apr27' # source folder
+dest_folder = 'khoi_data' # destination folder
 train_subjects = ['S_S01', 'S_S04', 'S_S05', 'S_S08', 'S_S13', 'S_S18', 'S_S19', 'S_S03',  'S_S06', 'S_S09', 'S_S17']
 
+# Create folders
 subprocess.run(['rm', '-r', dest_folder])
 subprocess.run(['mkdir', '-p', os.path.join(dest_folder, 'audio')])
 subprocess.run(['mkdir', '-p', os.path.join(dest_folder, 'train')])
@@ -16,16 +27,19 @@ subprocess.run(['mkdir', '-p', os.path.join(dest_folder, 'test')])
 
 spk2utt = {}
 
+# Browse all textgrid files
 for path, subdirs, files in os.walk(src_folder):
   for name in files:
     if name[-8:].lower() != 'textgrid':
       continue
-
+    
+    # Read audio and textgrid
     label = name[:-9]
     words = get_words_from_textgrid(os.path.join(path, name))
     rate, wav_data = wavfile.read(os.path.join(path, label + '.wav'))
     num_words = len(words)
 
+    # Browse all words
     for i in range(num_words):
       interval = words[i]
       text = interval[2]
@@ -48,7 +62,7 @@ for path, subdirs, files in os.walk(src_folder):
       new_label = f"{speaker}_{encoded_text}_{spk2utt[speaker]['cnt'][encoded_text]}"
       spk2utt[speaker]['utt'].append(new_label)
 
-      # save .wav
+      # save .wav (split)
       minAtFrame = math.floor(rate * interval[0])
       maxAtFrame = math.ceil(rate * interval[1])
       splitAudio = wav_data[minAtFrame:maxAtFrame]

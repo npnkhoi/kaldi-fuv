@@ -1,4 +1,9 @@
-from tracemalloc import start
+"""
+Utility constants and functions for split_by_words
+
+Author: Khoi
+"""
+
 from typing import List
 
 VN2TELEX = {
@@ -22,6 +27,12 @@ VN2TELEX = {
 }
 
 def get_words_from_textgrid(filename: str) -> List:
+  """
+  From a textgrid file, get all the blocks in the first tier (word).
+  This is to overcome the errors by the textgrid PyPI package.
+  """
+
+  # Open the textgrid file, whose encoding is either UTF-8 or UTF-16-BE
   try:
     with open(filename, 'r', encoding='utf-8') as f:
       lines = f.readlines()
@@ -29,8 +40,7 @@ def get_words_from_textgrid(filename: str) -> List:
     with open(filename, 'r', encoding='utf-16-be') as f:
       lines = f.readlines()
 
-  # print(lines)
-  # print(lines[13])
+  # Get the word blocks
   num_words = int(lines[13].split()[-1])
   ret = []
   for i in range(num_words):
