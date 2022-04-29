@@ -1,6 +1,25 @@
 from tracemalloc import start
 from typing import List
 
+VN2TELEX = {
+  "một": "mootj",
+  "hai": "hai",
+  "ba": "ba",
+  "bốn": "boons",
+  "năm": "nawm",
+  "sáu": "saus",
+  "bảy": "bayr",
+  "tám": "tams",
+  "chín": "chins",
+  "mười": "muowif",
+  "mươi": "muowi",
+  "lẻ": "ler",
+  "mốt": "moots",
+  "trăm": "trawm",
+  "lăm": "lawm",
+  "sil": "sil",
+  "silence": "sil",
+}
 
 def get_words_from_textgrid(filename: str) -> List:
   try:
