@@ -68,7 +68,7 @@ for path, subdirs, files in os.walk(SRC_FOLDER):
 
       spk2utt[speaker]['cnt'].setdefault(encoded_text, 0)
       spk2utt[speaker]['cnt'][encoded_text] += 1
-      new_label = f"{speaker}_{encoded_text}_{str(spk2utt[speaker]['cnt'][encoded_text]).rjust(2, '0')}"
+      new_label = f"{speaker}_W_{encoded_text}_{spk2utt[speaker]['cnt'][encoded_text].zfill(2)}"
       spk2utt[speaker]['utt'].append(new_label)
 
       # save .wav (split)
