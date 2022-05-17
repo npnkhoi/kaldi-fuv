@@ -1,0 +1,146 @@
+===== MONO TRAINING =====
+
+steps/train_mono.sh --nj 1 --cmd run.pl data/train data/lang exp/mono
+steps/train_mono.sh: Initializing monophone system.
+steps/train_mono.sh: Compiling training graphs
+steps/train_mono.sh: Aligning data equally (pass 0)
+steps/train_mono.sh: Pass 1
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 2
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 3
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 4
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 5
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 6
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 7
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 8
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 9
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 10
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 11
+steps/train_mono.sh: Pass 12
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 13
+steps/train_mono.sh: Pass 14
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 15
+steps/train_mono.sh: Pass 16
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 17
+steps/train_mono.sh: Pass 18
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 19
+steps/train_mono.sh: Pass 20
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 21
+steps/train_mono.sh: Pass 22
+steps/train_mono.sh: Pass 23
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 24
+steps/train_mono.sh: Pass 25
+steps/train_mono.sh: Pass 26
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 27
+steps/train_mono.sh: Pass 28
+steps/train_mono.sh: Pass 29
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 30
+steps/train_mono.sh: Pass 31
+steps/train_mono.sh: Pass 32
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 33
+steps/train_mono.sh: Pass 34
+steps/train_mono.sh: Pass 35
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 36
+steps/train_mono.sh: Pass 37
+steps/train_mono.sh: Pass 38
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 39
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/mono
+run.pl: job failed, log is in exp/mono/log/analyze_alignments.log
+steps/diagnostic/analyze_alignments.sh: analyze_phone_length_stats.py failed, but ignoring the error (it's just for diagnostics)
+steps/diagnostic/analyze_alignments.sh: see stats in exp/mono/log/analyze_alignments.log
+1755 warnings in exp/mono/log/update.*.log
+47408 warnings in exp/mono/log/align.*.*.log
+exp/mono: nj=1 align prob=-69.37 over 0.01h [retry=0.0%, fail=95.1%] states=88 gauss=220
+steps/train_mono.sh: Done training monophone system in exp/mono
+
+===== MONO DECODING =====
+
+WARNING: the --mono, --left-biphone and --quinphone options are now deprecated and ignored.
+tree-info exp/mono/tree 
+tree-info exp/mono/tree 
+fstpushspecial 
+fstdeterminizestar --use-log=true 
+fsttablecompose data/lang/L_disambig.fst data/lang/G.fst 
+fstminimizeencoded 
+fstisstochastic data/lang/tmp/LG.fst 
+3.28279e-05 2.28e-05
+fstcomposecontext --context-size=1 --central-position=0 --read-disambig-syms=data/lang/phones/disambig.int --write-disambig-syms=data/lang/tmp/disambig_ilabels_1_0.int data/lang/tmp/ilabels_1_0.5685 data/lang/tmp/LG.fst 
+fstisstochastic data/lang/tmp/CLG_1_0.fst 
+3.28279e-05 2.28e-05
+make-h-transducer --disambig-syms-out=exp/mono/graph/disambig_tid.int --transition-scale=1.0 data/lang/tmp/ilabels_1_0 exp/mono/tree exp/mono/final.mdl 
+fstminimizeencoded 
+fstrmepslocal 
+fsttablecompose exp/mono/graph/Ha.fst data/lang/tmp/CLG_1_0.fst 
+fstrmsymbols exp/mono/graph/disambig_tid.int 
+fstdeterminizestar --use-log=true 
+fstisstochastic exp/mono/graph/HCLGa.fst 
+0.000237238 -0.000304616
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/mono/final.mdl exp/mono/graph/HCLGa.fst 
+steps/decode.sh --config conf/decode.config --nj 1 --cmd run.pl exp/mono/graph data/test exp/mono/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/mono/graph exp/mono/decode
+run.pl: job failed, log is in exp/mono/decode/log/analyze_alignments.log
+exp/mono/decode/wer_10
+%WER 66.07 [ 220 / 333, 2 ins, 145 del, 73 sub ]
+%SER 66.07 [ 220 / 333 ]
+exp/mono/decode/wer_11
+%WER 66.67 [ 222 / 333, 2 ins, 148 del, 72 sub ]
+%SER 66.67 [ 222 / 333 ]
+exp/mono/decode/wer_12
+%WER 66.67 [ 222 / 333, 2 ins, 150 del, 70 sub ]
+%SER 66.67 [ 222 / 333 ]
+exp/mono/decode/wer_13
+%WER 68.47 [ 228 / 333, 2 ins, 156 del, 70 sub ]
+%SER 68.47 [ 228 / 333 ]
+exp/mono/decode/wer_14
+%WER 70.87 [ 236 / 333, 2 ins, 166 del, 68 sub ]
+%SER 70.87 [ 236 / 333 ]
+exp/mono/decode/wer_15
+%WER 71.77 [ 239 / 333, 2 ins, 170 del, 67 sub ]
+%SER 71.77 [ 239 / 333 ]
+exp/mono/decode/wer_16
+%WER 72.37 [ 241 / 333, 2 ins, 175 del, 64 sub ]
+%SER 72.37 [ 241 / 333 ]
+exp/mono/decode/wer_17
+%WER 72.97 [ 243 / 333, 2 ins, 180 del, 61 sub ]
+%SER 72.97 [ 243 / 333 ]
+exp/mono/decode/wer_7
+%WER 65.47 [ 218 / 333, 2 ins, 143 del, 73 sub ]
+%SER 65.47 [ 218 / 333 ]
+exp/mono/decode/wer_8
+%WER 65.47 [ 218 / 333, 2 ins, 143 del, 73 sub ]
+%SER 65.47 [ 218 / 333 ]
+exp/mono/decode/wer_9
+%WER 65.77 [ 219 / 333, 2 ins, 144 del, 73 sub ]
+%SER 65.77 [ 219 / 333 ]
+
+===== MONO ALIGNMENT =====
+
+steps/align_si.sh --nj 1 --cmd run.pl data/train data/lang exp/mono exp/mono_ali
+steps/align_si.sh: feature type is delta
+steps/align_si.sh: aligning data in data/train using model from exp/mono, putting alignments in exp/mono_ali
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/mono_ali
+run.pl: job failed, log is in exp/mono_ali/log/analyze_alignments.log
+steps/diagnostic/analyze_alignments.sh: analyze_phone_length_stats.py failed, but ignoring the error (it's just for diagnostics)
+steps/diagnostic/analyze_alignments.sh: see stats in exp/mono_ali/log/analyze_alignments.log
+steps/align_si.sh: done aligning data.
