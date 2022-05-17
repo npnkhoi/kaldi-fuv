@@ -1,2 +1,3 @@
-S10 /home/cs398/kaldi/egs/numbers/mfcc/cmvn_test.ark:4
-S14 /home/cs398/kaldi/egs/numbers/mfcc/cmvn_test.ark:247
+S_S17 /home/cs398/kaldi/egs/kaldi-fuv/mfcc/cmvn_test.ark:6
+S_S19 /home/cs398/kaldi/egs/kaldi-fuv/mfcc/cmvn_test.ark:251
+S_S22 /home/cs398/kaldi/egs/kaldi-fuv/mfcc/cmvn_test.ark:496
