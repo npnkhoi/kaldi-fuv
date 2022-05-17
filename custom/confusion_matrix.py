@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 transcript_to_telex = pd.read_csv("TranscriptToName.csv")
 
 def create_confusion_matrix(type):
-    plt.figure(figsize = (10,10))
+    plt.figure(figsize = (11,10))
     with open(f"/home/cs398/kaldi/egs/kaldi-fuv/outputs/out_{type}.txt", "r") as f:
         results = f.readlines()
     prediction = []
