@@ -1,28 +1,486 @@
-# compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/test/utt2dur.1 --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/test/wav_test.1.scp ark:- | copy-feats --write-num-frames=ark,t:exp/make_mfcc/test/utt2num_frames.1 --compress=true ark:- ark,scp:/home/cs398/kaldi/egs/numbers/mfcc/raw_mfcc_test.1.ark,/home/cs398/kaldi/egs/numbers/mfcc/raw_mfcc_test.1.scp 
-# Started at Thứ hai, 18 Tháng 4 năm 2022 13:40:28 +07
+# compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/test/utt2dur.1 --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/test/wav_test.1.scp ark:- | copy-feats --write-num-frames=ark,t:exp/make_mfcc/test/utt2num_frames.1 --compress=true ark:- ark,scp:/home/cs398/kaldi/egs/kaldi-fuv/mfcc/raw_mfcc_test.1.ark,/home/cs398/kaldi/egs/kaldi-fuv/mfcc/raw_mfcc_test.1.scp 
+# Started at Thứ ba, 17 Tháng 5 năm 2022 11:04:12 +07
 #
-copy-feats --write-num-frames=ark,t:exp/make_mfcc/test/utt2num_frames.1 --compress=true ark:- ark,scp:/home/cs398/kaldi/egs/numbers/mfcc/raw_mfcc_test.1.ark,/home/cs398/kaldi/egs/numbers/mfcc/raw_mfcc_test.1.scp 
+copy-feats --write-num-frames=ark,t:exp/make_mfcc/test/utt2num_frames.1 --compress=true ark:- ark,scp:/home/cs398/kaldi/egs/kaldi-fuv/mfcc/raw_mfcc_test.1.ark,/home/cs398/kaldi/egs/kaldi-fuv/mfcc/raw_mfcc_test.1.scp 
 compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/test/utt2dur.1 --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/test/wav_test.1.scp ark:- 
-WARNING (compute-mfcc-feats[5.5.1009~1-e4940]:Read():wave-reader.cc:260) Expected 616612 bytes in RIFF chunk, but after first data block there will be 36 + 616412 bytes (we do not support reading multiple data chunks).
-VLOG[2] (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:182) Processed features for key S_S10_D1
-WARNING (compute-mfcc-feats[5.5.1009~1-e4940]:Read():wave-reader.cc:260) Expected 641720 bytes in RIFF chunk, but after first data block there will be 36 + 641520 bytes (we do not support reading multiple data chunks).
-VLOG[2] (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:182) Processed features for key S_S10_D2
-WARNING (compute-mfcc-feats[5.5.1009~1-e4940]:Read():wave-reader.cc:260) Expected 650090 bytes in RIFF chunk, but after first data block there will be 36 + 649890 bytes (we do not support reading multiple data chunks).
-VLOG[2] (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:182) Processed features for key S_S10_D3
-WARNING (compute-mfcc-feats[5.5.1009~1-e4940]:Read():wave-reader.cc:260) Expected 616610 bytes in RIFF chunk, but after first data block there will be 36 + 616410 bytes (we do not support reading multiple data chunks).
-VLOG[2] (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:182) Processed features for key S_S10_D4
-WARNING (compute-mfcc-feats[5.5.1009~1-e4940]:Read():wave-reader.cc:260) Expected 671752 bytes in RIFF chunk, but after first data block there will be 36 + 671552 bytes (we do not support reading multiple data chunks).
-VLOG[2] (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:182) Processed features for key S_S10_D5
-WARNING (compute-mfcc-feats[5.5.1009~1-e4940]:Read():wave-reader.cc:260) Expected 610708 bytes in RIFF chunk, but after first data block there will be 36 + 610504 bytes (we do not support reading multiple data chunks).
-VLOG[2] (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:182) Processed features for key S_S10_D6
-VLOG[2] (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:182) Processed features for key S_S14_D1
-VLOG[2] (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:182) Processed features for key S_S14_D2
-VLOG[2] (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:182) Processed features for key S_S14_D3
-LOG (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:181) Processed 10 utterances
-VLOG[2] (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:182) Processed features for key S_S14_D4
-VLOG[2] (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:182) Processed features for key S_S14_D5
-VLOG[2] (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:182) Processed features for key S_S14_D6
-LOG (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:185)  Done 12 out of 12 utterances.
-LOG (copy-feats[5.5.1009~1-e4940]:main():copy-feats.cc:143) Copied 12 feature matrices.
-# Accounting: time=2 threads=1
-# Ended (code 0) at Thứ hai, 18 Tháng 4 năm 2022 13:40:30 +07, elapsed time 2 seconds
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_ba_01
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_ba_02
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_ba_03
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_ba_04
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_ba_05
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_ba_06
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_ba_07
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_ba_08
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_ba_09
+LOG (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:181) Processed 10 utterances
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_ba_10
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_ba_11
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_bayr_01
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_bayr_02
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_bayr_03
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_bayr_04
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_bayr_05
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_bayr_06
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_bayr_07
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_bayr_08
+LOG (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:181) Processed 20 utterances
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_bayr_09
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_boons_01
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_boons_02
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_chins_01
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_chins_02
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_chins_03
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_chins_04
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_hai_01
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_hai_02
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_hai_03
+LOG (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:181) Processed 30 utterances
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_hai_04
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_hai_05
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_hai_06
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_hai_07
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_hai_08
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_hai_09
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_hai_10
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_lawm_01
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_ler_01
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_mootj_01
+LOG (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:181) Processed 40 utterances
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_mootj_02
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_mootj_03
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_mootj_04
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_mootj_05
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_mootj_06
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_moots_01
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_muowi_01
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_muowi_02
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_muowi_03
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_muowi_04
+LOG (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:181) Processed 50 utterances
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_muowi_05
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_muowi_06
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_muowi_07
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_muowi_08
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_muowi_09
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_muowi_10
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_muowi_11
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_muowi_12
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_muowi_13
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_muowi_14
+LOG (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:181) Processed 60 utterances
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_muowi_15
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_muowi_16
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_muowi_17
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_muowi_18
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_muowi_19
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_muowi_20
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_muowi_21
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_muowif_01
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_nawm_01
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_nawm_02
+LOG (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:181) Processed 70 utterances
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_nawm_03
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_saus_01
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_saus_02
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_saus_03
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_saus_04
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_saus_05
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_saus_06
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_saus_07
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_saus_08
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_saus_09
+LOG (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:181) Processed 80 utterances
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_saus_10
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_saus_11
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_tams_01
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_tams_02
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_tams_03
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_tams_04
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_tams_05
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_tams_06
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_tams_07
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_tams_08
+LOG (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:181) Processed 90 utterances
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_trawm_01
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_trawm_02
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_trawm_03
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_trawm_04
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_trawm_05
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_trawm_06
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_trawm_07
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_trawm_08
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_trawm_09
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_trawm_10
+LOG (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:181) Processed 100 utterances
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_trawm_11
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_trawm_12
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_trawm_13
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_trawm_14
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_trawm_15
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_trawm_16
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_trawm_17
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_trawm_18
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_trawm_19
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_trawm_20
+LOG (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:181) Processed 110 utterances
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_trawm_21
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S17_W_trawm_22
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_ba_01
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_ba_02
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_ba_03
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_ba_04
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_ba_05
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_ba_06
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_ba_07
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_ba_08
+LOG (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:181) Processed 120 utterances
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_ba_09
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_ba_10
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_ba_11
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_bayr_01
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_bayr_02
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_bayr_03
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_bayr_04
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_bayr_05
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_bayr_06
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_bayr_07
+LOG (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:181) Processed 130 utterances
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_bayr_08
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_bayr_09
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_boons_01
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_boons_02
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_chins_01
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_chins_02
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_chins_03
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_chins_04
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_hai_01
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_hai_02
+LOG (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:181) Processed 140 utterances
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_hai_03
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_hai_04
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_hai_05
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_hai_06
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_hai_07
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_hai_08
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_hai_09
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_hai_10
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_lawm_01
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_ler_01
+LOG (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:181) Processed 150 utterances
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_mootj_01
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_mootj_02
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_mootj_03
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_mootj_04
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_mootj_05
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_mootj_06
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_moots_01
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_muowi_01
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_muowi_02
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_muowi_03
+LOG (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:181) Processed 160 utterances
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_muowi_04
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_muowi_05
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_muowi_06
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_muowi_07
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_muowi_08
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_muowi_09
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_muowi_10
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_muowi_11
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_muowi_12
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_muowi_13
+LOG (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:181) Processed 170 utterances
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_muowi_14
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_muowi_15
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_muowi_16
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_muowi_17
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_muowi_18
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_muowi_19
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_muowi_20
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_muowi_21
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_muowif_01
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_nawm_01
+LOG (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:181) Processed 180 utterances
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_nawm_02
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_nawm_03
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_saus_01
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_saus_02
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_saus_03
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_saus_04
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_saus_05
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_saus_06
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_saus_07
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_saus_08
+LOG (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:181) Processed 190 utterances
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_saus_09
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_saus_10
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_saus_11
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_tams_01
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_tams_02
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_tams_03
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_tams_04
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_tams_05
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_tams_06
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_tams_07
+LOG (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:181) Processed 200 utterances
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_tams_08
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_trawm_01
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_trawm_02
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_trawm_03
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_trawm_04
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_trawm_05
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_trawm_06
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_trawm_07
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_trawm_08
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_trawm_09
+LOG (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:181) Processed 210 utterances
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_trawm_10
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_trawm_11
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_trawm_12
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_trawm_13
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_trawm_14
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_trawm_15
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_trawm_16
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_trawm_17
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_trawm_18
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_trawm_19
+LOG (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:181) Processed 220 utterances
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_trawm_20
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_trawm_21
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S19_W_trawm_22
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_ba_01
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_ba_02
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_ba_03
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_ba_04
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_ba_05
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_ba_06
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_ba_07
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+LOG (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:181) Processed 230 utterances
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_ba_08
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_ba_09
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_ba_10
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_ba_11
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_bayr_01
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_bayr_02
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_bayr_03
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_bayr_04
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_bayr_05
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_bayr_06
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+LOG (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:181) Processed 240 utterances
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_bayr_07
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_bayr_08
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_bayr_09
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_boons_01
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_boons_02
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_chins_01
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_chins_02
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_chins_03
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_chins_04
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_hai_01
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+LOG (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:181) Processed 250 utterances
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_hai_02
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_hai_03
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_hai_04
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_hai_05
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_hai_06
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_hai_07
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_hai_08
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_hai_09
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_hai_10
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_lawm_01
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+LOG (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:181) Processed 260 utterances
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_ler_01
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_mootj_01
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_mootj_02
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_mootj_03
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_mootj_04
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_mootj_05
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_mootj_06
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_moots_01
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_muowi_01
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_muowi_02
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+LOG (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:181) Processed 270 utterances
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_muowi_03
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_muowi_04
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_muowi_05
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_muowi_06
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_muowi_07
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_muowi_08
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_muowi_09
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_muowi_10
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_muowi_11
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_muowi_12
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+LOG (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:181) Processed 280 utterances
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_muowi_13
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_muowi_14
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_muowi_15
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_muowi_16
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_muowi_17
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_muowi_18
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_muowi_19
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_muowi_20
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_muowi_21
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_muowif_01
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+LOG (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:181) Processed 290 utterances
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_nawm_01
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_nawm_02
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_nawm_03
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_saus_01
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_saus_02
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_saus_03
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_saus_04
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_saus_05
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_saus_06
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_saus_07
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+LOG (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:181) Processed 300 utterances
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_saus_08
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_saus_09
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_saus_10
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_saus_11
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_tams_01
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_tams_02
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_tams_03
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_tams_04
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_tams_05
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_tams_06
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+LOG (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:181) Processed 310 utterances
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_tams_07
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_tams_08
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_trawm_01
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_trawm_02
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_trawm_03
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_trawm_04
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_trawm_05
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_trawm_06
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_trawm_07
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_trawm_08
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+LOG (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:181) Processed 320 utterances
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_trawm_09
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_trawm_10
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_trawm_11
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_trawm_12
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_trawm_13
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_trawm_14
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_trawm_15
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_trawm_16
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_trawm_17
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_trawm_18
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+LOG (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:181) Processed 330 utterances
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_trawm_19
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_trawm_20
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_trawm_21
+WARNING (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:122) Channel not specified but you have data with 2 channels; defaulting to zero
+VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) Processed features for key S_S22_W_trawm_22
+LOG (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:185)  Done 333 out of 333 utterances.
+LOG (copy-feats[5.5.1023~1-d673]:main():copy-feats.cc:143) Copied 333 feature matrices.
+# Accounting: time=1 threads=1
+# Ended (code 0) at Thứ ba, 17 Tháng 5 năm 2022 11:04:13 +07, elapsed time 1 seconds

@@ -1,0 +1,23 @@
+# gmm-acc-stats-ali exp/mono/11.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:gunzip -c exp/mono/ali.1.gz|" exp/mono/11.1.acc 
+# Started at Thứ ba, 17 Tháng 5 năm 2022 11:04:20 +07
+#
+gmm-acc-stats-ali exp/mono/11.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:gunzip -c exp/mono/ali.1.gz|' exp/mono/11.1.acc 
+apply-cmvn --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- 
+add-deltas ark:- ark:- 
+LOG (gmm-acc-stats-ali[5.5.1023~1-d673]:main():gmm-acc-stats-ali.cc:105) Processed 50 utterances; for utterance S_S01_W_muowi_05 avg. like is -75.3905 over 13 frames.
+ERROR (apply-cmvn[5.5.1023~1-d673]:ApplyCmvn():cmvn.cc:70) Dim mismatch: cmvn 2x14, feats 0x0
+
+[ Stack-Trace: ]
+/home/cs398/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0x793) [0x7f115c5bd1c3]
+apply-cmvn(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x556fc185f215]
+/home/cs398/kaldi/src/lib/libkaldi-transform.so(kaldi::ApplyCmvn(kaldi::MatrixBase<double> const&, bool, kaldi::MatrixBase<float>*)+0x1b1) [0x7f115c6c9d38]
+apply-cmvn(main+0xa71) [0x556fc185d9fa]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f115c1b3083]
+apply-cmvn(_start+0x2e) [0x556fc185cece]
+
+kaldi::KaldiFatalErrorLOG (gmm-acc-stats-ali[5.5.1023~1-d673]:main():gmm-acc-stats-ali.cc:105) Processed 100 utterances; for utterance S_S01_W_sil_19 avg. like is -57.1849 over 73 frames.
+LOG (gmm-acc-stats-ali[5.5.1023~1-d673]:main():gmm-acc-stats-ali.cc:112) Done 110 files, 0 with errors.
+LOG (gmm-acc-stats-ali[5.5.1023~1-d673]:main():gmm-acc-stats-ali.cc:115) Overall avg like per frame (Gaussian only) = -69.1726 over 3911 frames.
+LOG (gmm-acc-stats-ali[5.5.1023~1-d673]:main():gmm-acc-stats-ali.cc:123) Written accs.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Thứ ba, 17 Tháng 5 năm 2022 11:04:20 +07, elapsed time 0 seconds

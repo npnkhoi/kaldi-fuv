@@ -1,0 +1,678 @@
+# gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri1/graph/words.txt exp/tri1/final.mdl exp/tri1/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:|gzip -c > exp/tri1/decode/lat.1.gz" 
+# Started at Thứ ba, 17 Tháng 5 năm 2022 11:04:38 +07
+#
+gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri1/graph/words.txt exp/tri1/final.mdl exp/tri1/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:|gzip -c > exp/tri1/decode/lat.1.gz' 
+add-deltas ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- 
+S_S17_W_ba_01 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_ba_01 is -8.73543 over 14 frames.
+S_S17_W_ba_02 bảy 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_ba_02 is -8.2872 over 35 frames.
+S_S17_W_ba_03 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_ba_03 is -9.1927 over 17 frames.
+S_S17_W_ba_04 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_ba_04 is -8.37209 over 23 frames.
+S_S17_W_ba_05 bảy 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_ba_05 is -8.00105 over 37 frames.
+S_S17_W_ba_06 bảy 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_ba_06 is -7.38111 over 39 frames.
+S_S17_W_ba_07 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_ba_07 is -9.47407 over 21 frames.
+S_S17_W_ba_08 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_ba_08 is -8.6662 over 14 frames.
+S_S17_W_ba_09 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_ba_09 is -9.44182 over 17 frames.
+S_S17_W_ba_10 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_ba_10 is -7.86544 over 41 frames.
+S_S17_W_ba_11 bảy 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_ba_11 is -7.43109 over 34 frames.
+S_S17_W_bayr_01 bảy 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_bayr_01 is -9.74774 over 19 frames.
+S_S17_W_bayr_02 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_bayr_02 is -10.3066 over 20 frames.
+S_S17_W_bayr_03 bảy 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_bayr_03 is -9.85724 over 21 frames.
+S_S17_W_bayr_04 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_bayr_04 is -10.6423 over 19 frames.
+S_S17_W_bayr_05 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_bayr_05 is -9.09385 over 25 frames.
+S_S17_W_bayr_06 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_bayr_06 is -9.35228 over 32 frames.
+S_S17_W_bayr_07 bảy 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_bayr_07 is -9.28277 over 32 frames.
+S_S17_W_bayr_08 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_bayr_08 is -10.7742 over 22 frames.
+S_S17_W_bayr_09 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_bayr_09 is -9.39013 over 15 frames.
+S_S17_W_boons_01 một 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_boons_01 is -8.63031 over 14 frames.
+S_S17_W_boons_02 mốt 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_boons_02 is -9.85538 over 23 frames.
+S_S17_W_chins_01 chín 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_chins_01 is -10.5756 over 27 frames.
+S_S17_W_chins_02 chín 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_chins_02 is -10.6594 over 19 frames.
+S_S17_W_chins_03 chín 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_chins_03 is -10.1669 over 21 frames.
+S_S17_W_chins_04 chín 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_chins_04 is -9.81409 over 16 frames.
+S_S17_W_hai_01 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_hai_01 is -7.52024 over 49 frames.
+S_S17_W_hai_02 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_hai_02 is -7.82838 over 27 frames.
+S_S17_W_hai_03 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_hai_03 is -8.92246 over 16 frames.
+S_S17_W_hai_04 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_hai_04 is -8.68453 over 9 frames.
+S_S17_W_hai_05 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_hai_05 is -7.52337 over 50 frames.
+S_S17_W_hai_06 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_hai_06 is -9.05593 over 15 frames.
+S_S17_W_hai_07 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_hai_07 is -7.3909 over 39 frames.
+S_S17_W_hai_08 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_hai_08 is -7.6318 over 25 frames.
+S_S17_W_hai_09 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_hai_09 is -8.76644 over 26 frames.
+S_S17_W_hai_10 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_hai_10 is -9.42308 over 25 frames.
+S_S17_W_lawm_01 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_lawm_01 is -8.09409 over 43 frames.
+S_S17_W_ler_01 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_ler_01 is -11.0731 over 23 frames.
+S_S17_W_mootj_01 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_mootj_01 is -10.4198 over 17 frames.
+S_S17_W_mootj_02 một 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_mootj_02 is -9.87449 over 16 frames.
+S_S17_W_mootj_03 một 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_mootj_03 is -9.99159 over 22 frames.
+S_S17_W_mootj_04 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_mootj_04 is -10.0082 over 25 frames.
+S_S17_W_mootj_05 một 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_mootj_05 is -8.98331 over 19 frames.
+S_S17_W_mootj_06 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_mootj_06 is -9.24536 over 18 frames.
+S_S17_W_moots_01 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_moots_01 is -8.49676 over 26 frames.
+S_S17_W_muowi_01 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_muowi_01 is -10.2235 over 20 frames.
+S_S17_W_muowi_02 mươi 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_muowi_02 is -9.02656 over 17 frames.
+S_S17_W_muowi_03 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_muowi_03 is -9.1558 over 20 frames.
+S_S17_W_muowi_04 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_muowi_04 is -10.4519 over 18 frames.
+S_S17_W_muowi_05 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_muowi_05 is -9.62537 over 19 frames.
+S_S17_W_muowi_06 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_muowi_06 is -9.81136 over 17 frames.
+S_S17_W_muowi_07 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_muowi_07 is -9.60423 over 13 frames.
+S_S17_W_muowi_08 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_muowi_08 is -10.1823 over 15 frames.
+S_S17_W_muowi_09 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_muowi_09 is -9.07925 over 13 frames.
+S_S17_W_muowi_10 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_muowi_10 is -10.5073 over 13 frames.
+S_S17_W_muowi_11 mươi 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_muowi_11 is -8.99015 over 20 frames.
+S_S17_W_muowi_12 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_muowi_12 is -9.27464 over 20 frames.
+S_S17_W_muowi_13 mươi 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_muowi_13 is -10.4188 over 16 frames.
+S_S17_W_muowi_14 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_muowi_14 is -9.69116 over 15 frames.
+S_S17_W_muowi_15 mươi 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_muowi_15 is -8.70007 over 21 frames.
+S_S17_W_muowi_16 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_muowi_16 is -9.91926 over 18 frames.
+S_S17_W_muowi_17 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_muowi_17 is -9.80074 over 12 frames.
+S_S17_W_muowi_18 mươi 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_muowi_18 is -9.20288 over 25 frames.
+S_S17_W_muowi_19 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_muowi_19 is -9.16113 over 15 frames.
+S_S17_W_muowi_20 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_muowi_20 is -8.78464 over 27 frames.
+S_S17_W_muowi_21 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_muowi_21 is -11.2938 over 10 frames.
+S_S17_W_muowif_01 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_muowif_01 is -8.19153 over 32 frames.
+S_S17_W_nawm_01 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_nawm_01 is -9.08145 over 36 frames.
+S_S17_W_nawm_02 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_nawm_02 is -8.91103 over 25 frames.
+S_S17_W_nawm_03 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_nawm_03 is -8.59311 over 26 frames.
+S_S17_W_saus_01 sáu 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_saus_01 is -8.92924 over 31 frames.
+S_S17_W_saus_02 sáu 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_saus_02 is -8.4412 over 42 frames.
+S_S17_W_saus_03 sáu 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_saus_03 is -8.36401 over 41 frames.
+S_S17_W_saus_04 sáu 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_saus_04 is -8.24007 over 44 frames.
+S_S17_W_saus_05 sáu 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_saus_05 is -8.83683 over 47 frames.
+S_S17_W_saus_06 sáu 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_saus_06 is -9.82039 over 24 frames.
+S_S17_W_saus_07 sáu 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_saus_07 is -9.25354 over 24 frames.
+S_S17_W_saus_08 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_saus_08 is -10.0187 over 23 frames.
+S_S17_W_saus_09 sáu 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_saus_09 is -10.0894 over 15 frames.
+S_S17_W_saus_10 sáu 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_saus_10 is -8.87007 over 28 frames.
+S_S17_W_saus_11 sáu 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_saus_11 is -8.18256 over 36 frames.
+S_S17_W_tams_01 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_tams_01 is -9.13996 over 23 frames.
+S_S17_W_tams_02 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_tams_02 is -8.0423 over 33 frames.
+S_S17_W_tams_03 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_tams_03 is -8.50201 over 22 frames.
+S_S17_W_tams_04 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_tams_04 is -10.4429 over 18 frames.
+S_S17_W_tams_05 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_tams_05 is -9.78027 over 18 frames.
+S_S17_W_tams_06 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_tams_06 is -9.88859 over 17 frames.
+S_S17_W_tams_07 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_tams_07 is -8.33763 over 19 frames.
+S_S17_W_tams_08 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_tams_08 is -8.71177 over 20 frames.
+S_S17_W_trawm_01 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_trawm_01 is -10.1091 over 27 frames.
+S_S17_W_trawm_02 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_trawm_02 is -8.97795 over 32 frames.
+S_S17_W_trawm_03 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_trawm_03 is -9.45035 over 15 frames.
+S_S17_W_trawm_04 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_trawm_04 is -10.8878 over 17 frames.
+S_S17_W_trawm_05 chín 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_trawm_05 is -10.4786 over 32 frames.
+S_S17_W_trawm_06 trăm 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_trawm_06 is -8.95721 over 17 frames.
+S_S17_W_trawm_07 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_trawm_07 is -9.23691 over 24 frames.
+S_S17_W_trawm_08 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_trawm_08 is -10.5341 over 24 frames.
+S_S17_W_trawm_09 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_trawm_09 is -11.3449 over 20 frames.
+S_S17_W_trawm_10 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_trawm_10 is -9.84741 over 14 frames.
+S_S17_W_trawm_11 trăm 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_trawm_11 is -8.94229 over 20 frames.
+S_S17_W_trawm_12 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_trawm_12 is -9.82154 over 22 frames.
+S_S17_W_trawm_13 trăm 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_trawm_13 is -8.7583 over 23 frames.
+S_S17_W_trawm_14 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_trawm_14 is -9.75814 over 25 frames.
+S_S17_W_trawm_15 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_trawm_15 is -9.49776 over 17 frames.
+S_S17_W_trawm_16 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_trawm_16 is -10.7959 over 23 frames.
+S_S17_W_trawm_17 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_trawm_17 is -9.70334 over 26 frames.
+S_S17_W_trawm_18 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_trawm_18 is -9.39575 over 17 frames.
+S_S17_W_trawm_19 trăm 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_trawm_19 is -8.28301 over 17 frames.
+S_S17_W_trawm_20 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_trawm_20 is -9.04145 over 18 frames.
+S_S17_W_trawm_21 sáu 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_trawm_21 is -9.4109 over 24 frames.
+S_S17_W_trawm_22 trăm 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S17_W_trawm_22 is -9.82622 over 17 frames.
+S_S19_W_ba_01 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_ba_01 is -8.71238 over 14 frames.
+S_S19_W_ba_02 bảy 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_ba_02 is -8.29843 over 35 frames.
+S_S19_W_ba_03 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_ba_03 is -9.19535 over 17 frames.
+S_S19_W_ba_04 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_ba_04 is -8.37956 over 23 frames.
+S_S19_W_ba_05 bảy 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_ba_05 is -8.01545 over 37 frames.
+S_S19_W_ba_06 bảy 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_ba_06 is -7.37329 over 39 frames.
+S_S19_W_ba_07 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_ba_07 is -9.48513 over 21 frames.
+S_S19_W_ba_08 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_ba_08 is -8.66675 over 14 frames.
+S_S19_W_ba_09 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_ba_09 is -9.47689 over 17 frames.
+S_S19_W_ba_10 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_ba_10 is -7.84755 over 41 frames.
+S_S19_W_ba_11 bảy 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_ba_11 is -7.42457 over 34 frames.
+S_S19_W_bayr_01 bảy 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_bayr_01 is -9.72263 over 19 frames.
+S_S19_W_bayr_02 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_bayr_02 is -10.3055 over 20 frames.
+S_S19_W_bayr_03 bảy 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_bayr_03 is -9.86804 over 21 frames.
+S_S19_W_bayr_04 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_bayr_04 is -10.6509 over 19 frames.
+S_S19_W_bayr_05 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_bayr_05 is -9.09504 over 25 frames.
+S_S19_W_bayr_06 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_bayr_06 is -9.37539 over 32 frames.
+S_S19_W_bayr_07 bảy 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_bayr_07 is -9.28911 over 32 frames.
+S_S19_W_bayr_08 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_bayr_08 is -10.7804 over 22 frames.
+S_S19_W_bayr_09 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_bayr_09 is -9.40538 over 15 frames.
+S_S19_W_boons_01 một 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_boons_01 is -8.63656 over 14 frames.
+S_S19_W_boons_02 mốt 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_boons_02 is -9.83537 over 23 frames.
+S_S19_W_chins_01 chín 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_chins_01 is -10.6118 over 27 frames.
+S_S19_W_chins_02 chín 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_chins_02 is -10.6729 over 19 frames.
+S_S19_W_chins_03 chín 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_chins_03 is -10.1853 over 21 frames.
+S_S19_W_chins_04 chín 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_chins_04 is -9.8005 over 16 frames.
+S_S19_W_hai_01 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_hai_01 is -7.51735 over 49 frames.
+S_S19_W_hai_02 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_hai_02 is -7.83882 over 27 frames.
+S_S19_W_hai_03 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_hai_03 is -8.93217 over 16 frames.
+S_S19_W_hai_04 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_hai_04 is -8.67125 over 9 frames.
+S_S19_W_hai_05 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_hai_05 is -7.52372 over 50 frames.
+S_S19_W_hai_06 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_hai_06 is -9.05845 over 15 frames.
+S_S19_W_hai_07 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_hai_07 is -7.39205 over 39 frames.
+S_S19_W_hai_08 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_hai_08 is -7.6279 over 25 frames.
+S_S19_W_hai_09 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_hai_09 is -8.7751 over 26 frames.
+S_S19_W_hai_10 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_hai_10 is -9.43059 over 25 frames.
+S_S19_W_lawm_01 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_lawm_01 is -8.09313 over 43 frames.
+S_S19_W_ler_01 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_ler_01 is -11.0392 over 23 frames.
+S_S19_W_mootj_01 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_mootj_01 is -10.4333 over 17 frames.
+S_S19_W_mootj_02 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_mootj_02 is -9.88082 over 16 frames.
+S_S19_W_mootj_03 một 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_mootj_03 is -9.97246 over 22 frames.
+S_S19_W_mootj_04 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_mootj_04 is -10.0233 over 25 frames.
+S_S19_W_mootj_05 một 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_mootj_05 is -8.97411 over 19 frames.
+S_S19_W_mootj_06 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_mootj_06 is -9.26983 over 18 frames.
+S_S19_W_moots_01 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_moots_01 is -8.50351 over 26 frames.
+S_S19_W_muowi_01 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_muowi_01 is -10.2302 over 20 frames.
+S_S19_W_muowi_02 mươi 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_muowi_02 is -9.05026 over 17 frames.
+S_S19_W_muowi_03 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_muowi_03 is -9.13024 over 20 frames.
+S_S19_W_muowi_04 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_muowi_04 is -10.4595 over 18 frames.
+S_S19_W_muowi_05 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_muowi_05 is -9.58803 over 19 frames.
+S_S19_W_muowi_06 mươi 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_muowi_06 is -9.80072 over 17 frames.
+S_S19_W_muowi_07 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_muowi_07 is -9.58125 over 13 frames.
+S_S19_W_muowi_08 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_muowi_08 is -10.2119 over 15 frames.
+S_S19_W_muowi_09 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_muowi_09 is -9.04554 over 13 frames.
+S_S19_W_muowi_10 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_muowi_10 is -10.4747 over 13 frames.
+S_S19_W_muowi_11 mươi 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_muowi_11 is -8.99672 over 20 frames.
+S_S19_W_muowi_12 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_muowi_12 is -9.27374 over 20 frames.
+S_S19_W_muowi_13 mươi 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_muowi_13 is -10.4642 over 16 frames.
+S_S19_W_muowi_14 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_muowi_14 is -9.69048 over 15 frames.
+S_S19_W_muowi_15 mươi 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_muowi_15 is -8.70448 over 21 frames.
+S_S19_W_muowi_16 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_muowi_16 is -9.90037 over 18 frames.
+S_S19_W_muowi_17 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_muowi_17 is -9.82814 over 12 frames.
+S_S19_W_muowi_18 mươi 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_muowi_18 is -9.19794 over 25 frames.
+S_S19_W_muowi_19 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_muowi_19 is -9.16692 over 15 frames.
+S_S19_W_muowi_20 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_muowi_20 is -8.77461 over 27 frames.
+S_S19_W_muowi_21 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_muowi_21 is -11.3065 over 10 frames.
+S_S19_W_muowif_01 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_muowif_01 is -8.19838 over 32 frames.
+S_S19_W_nawm_01 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_nawm_01 is -9.07827 over 36 frames.
+S_S19_W_nawm_02 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_nawm_02 is -8.90073 over 25 frames.
+S_S19_W_nawm_03 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_nawm_03 is -8.60611 over 26 frames.
+S_S19_W_saus_01 sáu 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_saus_01 is -8.92286 over 31 frames.
+S_S19_W_saus_02 sáu 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_saus_02 is -8.40465 over 42 frames.
+S_S19_W_saus_03 sáu 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_saus_03 is -8.37294 over 41 frames.
+S_S19_W_saus_04 sáu 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_saus_04 is -8.22672 over 44 frames.
+S_S19_W_saus_05 sáu 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_saus_05 is -8.82088 over 47 frames.
+S_S19_W_saus_06 sáu 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_saus_06 is -9.80516 over 24 frames.
+S_S19_W_saus_07 sáu 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_saus_07 is -9.21647 over 24 frames.
+S_S19_W_saus_08 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_saus_08 is -10.0205 over 23 frames.
+S_S19_W_saus_09 sáu 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_saus_09 is -10.0858 over 15 frames.
+S_S19_W_saus_10 sáu 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_saus_10 is -8.86849 over 28 frames.
+S_S19_W_saus_11 sáu 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_saus_11 is -8.16344 over 36 frames.
+S_S19_W_tams_01 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_tams_01 is -9.14687 over 23 frames.
+S_S19_W_tams_02 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_tams_02 is -8.05036 over 33 frames.
+S_S19_W_tams_03 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_tams_03 is -8.51606 over 22 frames.
+S_S19_W_tams_04 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_tams_04 is -10.4454 over 18 frames.
+S_S19_W_tams_05 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_tams_05 is -9.79559 over 18 frames.
+S_S19_W_tams_06 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_tams_06 is -9.90509 over 17 frames.
+S_S19_W_tams_07 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_tams_07 is -8.34215 over 19 frames.
+S_S19_W_tams_08 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_tams_08 is -8.69323 over 20 frames.
+S_S19_W_trawm_01 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_trawm_01 is -10.1303 over 27 frames.
+S_S19_W_trawm_02 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_trawm_02 is -8.9669 over 32 frames.
+S_S19_W_trawm_03 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_trawm_03 is -9.45239 over 15 frames.
+S_S19_W_trawm_04 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_trawm_04 is -10.8974 over 17 frames.
+S_S19_W_trawm_05 chín 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_trawm_05 is -10.4663 over 32 frames.
+S_S19_W_trawm_06 trăm 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_trawm_06 is -8.94367 over 17 frames.
+S_S19_W_trawm_07 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_trawm_07 is -9.25502 over 24 frames.
+S_S19_W_trawm_08 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_trawm_08 is -10.558 over 24 frames.
+S_S19_W_trawm_09 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_trawm_09 is -11.355 over 20 frames.
+S_S19_W_trawm_10 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_trawm_10 is -9.85726 over 14 frames.
+S_S19_W_trawm_11 trăm 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_trawm_11 is -8.92305 over 20 frames.
+S_S19_W_trawm_12 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_trawm_12 is -9.82399 over 22 frames.
+S_S19_W_trawm_13 trăm 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_trawm_13 is -8.74816 over 23 frames.
+S_S19_W_trawm_14 trăm 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_trawm_14 is -9.76874 over 25 frames.
+S_S19_W_trawm_15 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_trawm_15 is -9.49086 over 17 frames.
+S_S19_W_trawm_16 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_trawm_16 is -10.8774 over 23 frames.
+S_S19_W_trawm_17 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_trawm_17 is -9.67136 over 26 frames.
+S_S19_W_trawm_18 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_trawm_18 is -9.38167 over 17 frames.
+S_S19_W_trawm_19 trăm 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_trawm_19 is -8.29316 over 17 frames.
+S_S19_W_trawm_20 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_trawm_20 is -9.03456 over 18 frames.
+S_S19_W_trawm_21 sáu 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_trawm_21 is -9.41042 over 24 frames.
+S_S19_W_trawm_22 trăm 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S19_W_trawm_22 is -9.8314 over 17 frames.
+S_S22_W_ba_01 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_ba_01 is -8.83725 over 10 frames.
+S_S22_W_ba_02 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_ba_02 is -8.50183 over 27 frames.
+S_S22_W_ba_03 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_ba_03 is -8.8289 over 9 frames.
+S_S22_W_ba_04 ba 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_ba_04 is -7.93622 over 27 frames.
+S_S22_W_ba_05 ba 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_ba_05 is -8.22747 over 23 frames.
+S_S22_W_ba_06 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_ba_06 is -7.84331 over 28 frames.
+S_S22_W_ba_07 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_ba_07 is -10.3318 over 11 frames.
+S_S22_W_ba_08 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_ba_08 is -9.39784 over 5 frames.
+S_S22_W_ba_09 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_ba_09 is -10.5531 over 13 frames.
+S_S22_W_ba_10 ba 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_ba_10 is -8.11764 over 24 frames.
+S_S22_W_ba_11 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_ba_11 is -8.38422 over 26 frames.
+S_S22_W_bayr_01 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_bayr_01 is -12.1527 over 12 frames.
+S_S22_W_bayr_02 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_bayr_02 is -10.1769 over 18 frames.
+S_S22_W_bayr_03 bảy 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_bayr_03 is -10.1757 over 8 frames.
+S_S22_W_bayr_04 bảy 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_bayr_04 is -9.40199 over 9 frames.
+S_S22_W_bayr_05 bảy 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_bayr_05 is -9.42746 over 26 frames.
+S_S22_W_bayr_06 bảy 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_bayr_06 is -9.36691 over 29 frames.
+S_S22_W_bayr_07 bảy 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_bayr_07 is -10.2315 over 25 frames.
+S_S22_W_bayr_08 bảy 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_bayr_08 is -10.7862 over 16 frames.
+S_S22_W_bayr_09 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_bayr_09 is -10.6058 over 11 frames.
+S_S22_W_boons_01 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_boons_01 is -9.63934 over 14 frames.
+S_S22_W_boons_02 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_boons_02 is -10.5942 over 19 frames.
+S_S22_W_chins_01 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_chins_01 is -10.7407 over 21 frames.
+S_S22_W_chins_02 chín 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_chins_02 is -10.3181 over 14 frames.
+S_S22_W_chins_03 chín 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_chins_03 is -11.1175 over 18 frames.
+S_S22_W_chins_04 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_chins_04 is -12.1325 over 10 frames.
+S_S22_W_hai_01 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_hai_01 is -8.53753 over 56 frames.
+LOG (apply-cmvn[5.5.1023~1-d673]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 333 utterances, errors on 0
+S_S22_W_hai_02 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_hai_02 is -8.17131 over 35 frames.
+S_S22_W_hai_03 bảy 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_hai_03 is -9.56026 over 19 frames.
+S_S22_W_hai_04 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_hai_04 is -9.53379 over 15 frames.
+S_S22_W_hai_05 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_hai_05 is -8.57898 over 35 frames.
+S_S22_W_hai_06 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_hai_06 is -9.68633 over 16 frames.
+S_S22_W_hai_07 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_hai_07 is -8.43152 over 32 frames.
+S_S22_W_hai_08 bảy 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_hai_08 is -8.66542 over 30 frames.
+S_S22_W_hai_09 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_hai_09 is -9.88223 over 19 frames.
+S_S22_W_hai_10 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_hai_10 is -10.3966 over 18 frames.
+S_S22_W_lawm_01 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_lawm_01 is -9.31996 over 28 frames.
+S_S22_W_ler_01 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_ler_01 is -9.64989 over 18 frames.
+S_S22_W_mootj_01 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_mootj_01 is -10.1811 over 20 frames.
+S_S22_W_mootj_02 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_mootj_02 is -11.3144 over 14 frames.
+S_S22_W_mootj_03 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_mootj_03 is -10.5453 over 6 frames.
+S_S22_W_mootj_04 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_mootj_04 is -11.3488 over 7 frames.
+S_S22_W_mootj_05 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_mootj_05 is -11.5355 over 13 frames.
+S_S22_W_mootj_06 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_mootj_06 is -10.3521 over 18 frames.
+S_S22_W_moots_01 mốt 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_moots_01 is -10.1426 over 22 frames.
+S_S22_W_muowi_01 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_muowi_01 is -10.4289 over 20 frames.
+S_S22_W_muowi_02 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_muowi_02 is -10.2703 over 18 frames.
+S_S22_W_muowi_03 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_muowi_03 is -10.105 over 20 frames.
+S_S22_W_muowi_04 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_muowi_04 is -11.0684 over 16 frames.
+S_S22_W_muowi_05 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_muowi_05 is -10.911 over 9 frames.
+S_S22_W_muowi_06 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_muowi_06 is -9.39137 over 12 frames.
+S_S22_W_muowi_07 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_muowi_07 is -10.8998 over 18 frames.
+S_S22_W_muowi_08 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_muowi_08 is -10.4733 over 15 frames.
+S_S22_W_muowi_09 mươi 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_muowi_09 is -10.63 over 18 frames.
+S_S22_W_muowi_10 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_muowi_10 is -13.0447 over 12 frames.
+S_S22_W_muowi_11 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_muowi_11 is -10.9865 over 18 frames.
+S_S22_W_muowi_12 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_muowi_12 is -11.0909 over 17 frames.
+S_S22_W_muowi_13 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_muowi_13 is -10.6769 over 18 frames.
+S_S22_W_muowi_14 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_muowi_14 is -12.4964 over 10 frames.
+S_S22_W_muowi_15 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_muowi_15 is -10.1321 over 18 frames.
+S_S22_W_muowi_16 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_muowi_16 is -10.4128 over 14 frames.
+S_S22_W_muowi_17 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_muowi_17 is -10.9514 over 16 frames.
+S_S22_W_muowi_18 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_muowi_18 is -11.082 over 17 frames.
+S_S22_W_muowi_19 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_muowi_19 is -11.3679 over 14 frames.
+S_S22_W_muowi_20 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_muowi_20 is -9.66604 over 26 frames.
+S_S22_W_muowi_21 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_muowi_21 is -10.7262 over 8 frames.
+S_S22_W_muowif_01 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_muowif_01 is -9.3201 over 26 frames.
+S_S22_W_nawm_01 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_nawm_01 is -10.2007 over 20 frames.
+S_S22_W_nawm_02 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_nawm_02 is -9.91009 over 16 frames.
+S_S22_W_nawm_03 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_nawm_03 is -10.34 over 15 frames.
+S_S22_W_saus_01 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_saus_01 is -9.99797 over 36 frames.
+S_S22_W_saus_02 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_saus_02 is -9.55334 over 43 frames.
+S_S22_W_saus_03 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_saus_03 is -9.9846 over 34 frames.
+S_S22_W_saus_04 sáu 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_saus_04 is -9.67392 over 34 frames.
+S_S22_W_saus_05 sáu 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_saus_05 is -9.26084 over 33 frames.
+S_S22_W_saus_06 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_saus_06 is -12.215 over 18 frames.
+S_S22_W_saus_07 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_saus_07 is -10.7507 over 21 frames.
+S_S22_W_saus_08 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_saus_08 is -10.4214 over 22 frames.
+S_S22_W_saus_09 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_saus_09 is -12.2611 over 14 frames.
+S_S22_W_saus_10 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_saus_10 is -11.0852 over 17 frames.
+S_S22_W_saus_11 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_saus_11 is -9.63823 over 27 frames.
+S_S22_W_tams_01 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_tams_01 is -9.04551 over 20 frames.
+S_S22_W_tams_02 bảy 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_tams_02 is -8.18151 over 31 frames.
+S_S22_W_tams_03 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_tams_03 is -9.28822 over 22 frames.
+S_S22_W_tams_04 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_tams_04 is -9.5528 over 19 frames.
+S_S22_W_tams_05 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_tams_05 is -8.82478 over 13 frames.
+S_S22_W_tams_06 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_tams_06 is -8.69024 over 11 frames.
+S_S22_W_tams_07 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_tams_07 is -10.0289 over 16 frames.
+S_S22_W_tams_08 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_tams_08 is -8.85006 over 13 frames.
+S_S22_W_trawm_01 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_trawm_01 is -10.2423 over 43 frames.
+S_S22_W_trawm_02 tám 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_trawm_02 is -10.083 over 26 frames.
+S_S22_W_trawm_03 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_trawm_03 is -9.7509 over 25 frames.
+S_S22_W_trawm_04 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_trawm_04 is -10.1662 over 20 frames.
+S_S22_W_trawm_05 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_trawm_05 is -10.3358 over 18 frames.
+S_S22_W_trawm_06 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_trawm_06 is -9.29662 over 22 frames.
+S_S22_W_trawm_07 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_trawm_07 is -10.1002 over 17 frames.
+S_S22_W_trawm_08 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_trawm_08 is -9.84409 over 17 frames.
+S_S22_W_trawm_09 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_trawm_09 is -9.69271 over 19 frames.
+S_S22_W_trawm_10 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_trawm_10 is -9.20131 over 11 frames.
+S_S22_W_trawm_11 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_trawm_11 is -9.62811 over 20 frames.
+S_S22_W_trawm_12 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_trawm_12 is -9.69214 over 16 frames.
+S_S22_W_trawm_13 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_trawm_13 is -8.99445 over 16 frames.
+S_S22_W_trawm_14 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_trawm_14 is -9.9231 over 16 frames.
+S_S22_W_trawm_15 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_trawm_15 is -11.0766 over 14 frames.
+S_S22_W_trawm_16 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_trawm_16 is -9.76747 over 20 frames.
+S_S22_W_trawm_17 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_trawm_17 is -11.0637 over 11 frames.
+S_S22_W_trawm_18 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_trawm_18 is -9.87351 over 16 frames.
+S_S22_W_trawm_19 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_trawm_19 is -10.3461 over 17 frames.
+S_S22_W_trawm_20 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_trawm_20 is -10.4611 over 11 frames.
+S_S22_W_trawm_21 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_trawm_21 is -10.6968 over 12 frames.
+S_S22_W_trawm_22 
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S22_W_trawm_22 is -11.5787 over 15 frames.
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:main():gmm-latgen-faster.cc:176) Time taken 0.64511s: real-time factor assuming 100 frames/sec is 0.00883349
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:main():gmm-latgen-faster.cc:179) Done 333 utterances, failed for 0
+LOG (gmm-latgen-faster[5.5.1023~1-d673]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -9.3324 over 7303 frames.
+# Accounting: time=1 threads=1
+# Ended (code 0) at Thứ ba, 17 Tháng 5 năm 2022 11:04:39 +07, elapsed time 1 seconds

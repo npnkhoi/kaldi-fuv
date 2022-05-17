@@ -1,0 +1,674 @@
+# lattice-best-path --lm-scale=12 --word-symbol-table=exp/mono/graph/words.txt "ark:gunzip -c exp/mono/decode/lat.*.gz|" ark,t:exp/mono/decode/scoring/12.tra 
+# Started at Thứ ba, 17 Tháng 5 năm 2022 11:04:29 +07
+#
+lattice-best-path --lm-scale=12 --word-symbol-table=exp/mono/graph/words.txt 'ark:gunzip -c exp/mono/decode/lat.*.gz|' ark,t:exp/mono/decode/scoring/12.tra 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_ba_01, best cost 101.393 + 1446.15 = 1547.54 over 14 frames.
+S_S17_W_ba_01 bảy 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_ba_02, best cost 106.458 + 3475.09 = 3581.55 over 35 frames.
+S_S17_W_ba_02 bảy 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_ba_03, best cost 58.4821 + 1918.44 = 1976.92 over 17 frames.
+S_S17_W_ba_03 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_ba_04, best cost 103.334 + 2238.98 = 2342.31 over 23 frames.
+S_S17_W_ba_04 bảy 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_ba_05, best cost 111.578 + 3473.44 = 3585.02 over 37 frames.
+S_S17_W_ba_05 bảy 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_ba_06, best cost 116.54 + 3370.84 = 3487.38 over 39 frames.
+S_S17_W_ba_06 bảy 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_ba_07, best cost 61.4237 + 2399.57 = 2460.99 over 21 frames.
+S_S17_W_ba_07 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_ba_08, best cost 57.1149 + 1477.57 = 1534.68 over 14 frames.
+S_S17_W_ba_08 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_ba_09, best cost 58.9422 + 1979.7 = 2038.64 over 17 frames.
+S_S17_W_ba_09 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_ba_10, best cost 113.912 + 3996.78 = 4110.69 over 41 frames.
+S_S17_W_ba_10 tám 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_ba_11, best cost 105.858 + 2991.86 = 3097.71 over 34 frames.
+S_S17_W_ba_11 tám 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_bayr_01, best cost 97.8511 + 2171.09 = 2268.94 over 19 frames.
+S_S17_W_bayr_01 bảy 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_bayr_02, best cost 98.0793 + 2391.84 = 2489.92 over 20 frames.
+S_S17_W_bayr_02 bảy 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_bayr_03, best cost 97.3762 + 2423.78 = 2521.15 over 21 frames.
+S_S17_W_bayr_03 bảy 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_bayr_04, best cost 97.6578 + 2306.46 = 2404.11 over 19 frames.
+S_S17_W_bayr_04 bảy 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_bayr_05, best cost 64.715 + 2781.99 = 2846.71 over 25 frames.
+S_S17_W_bayr_05 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_bayr_06, best cost 100.193 + 3656.92 = 3757.11 over 32 frames.
+S_S17_W_bayr_06 bảy 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_bayr_07, best cost 110.279 + 3526.03 = 3636.3 over 32 frames.
+S_S17_W_bayr_07 bảy 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_bayr_08, best cost 62.7337 + 2792.6 = 2855.33 over 22 frames.
+S_S17_W_bayr_08 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_bayr_09, best cost 102.504 + 1627.06 = 1729.56 over 15 frames.
+S_S17_W_bayr_09 bảy 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_boons_01, best cost 100.269 + 1405.16 = 1505.43 over 14 frames.
+S_S17_W_boons_01 một 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_boons_02, best cost 105.496 + 2635 = 2740.5 over 23 frames.
+S_S17_W_boons_02 một 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_chins_01, best cost 112.835 + 3324.84 = 3437.68 over 27 frames.
+S_S17_W_chins_01 chín 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_chins_02, best cost 104.756 + 2499.27 = 2604.02 over 19 frames.
+S_S17_W_chins_02 chín 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_chins_03, best cost 104.945 + 2501.88 = 2606.83 over 21 frames.
+S_S17_W_chins_03 chín 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_chins_04, best cost 104.445 + 1926.29 = 2030.73 over 16 frames.
+S_S17_W_chins_04 chín 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_hai_01, best cost 123.325 + 4647.28 = 4770.61 over 49 frames.
+S_S17_W_hai_01 tám 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_hai_02, best cost 61.9036 + 2651.32 = 2713.22 over 27 frames.
+S_S17_W_hai_02 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_hai_03, best cost 58.0923 + 1681.03 = 1739.13 over 16 frames.
+S_S17_W_hai_03 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_hai_04, best cost 52.6219 + 933.325 = 985.947 over 9 frames.
+S_S17_W_hai_04 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_hai_05, best cost 122.89 + 4622.36 = 4745.25 over 50 frames.
+S_S17_W_hai_05 bảy 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_hai_06, best cost 57.6588 + 1637.33 = 1694.99 over 15 frames.
+S_S17_W_hai_06 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_hai_07, best cost 119.301 + 3499.75 = 3619.05 over 39 frames.
+S_S17_W_hai_07 tám 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_hai_08, best cost 59.523 + 2236.39 = 2295.92 over 25 frames.
+S_S17_W_hai_08 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_hai_09, best cost 65.3901 + 2835.74 = 2901.13 over 26 frames.
+S_S17_W_hai_09 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_hai_10, best cost 63.9282 + 2864.34 = 2928.27 over 25 frames.
+S_S17_W_hai_10 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_lawm_01, best cost 125.345 + 4385.62 = 4510.97 over 43 frames.
+S_S17_W_lawm_01 một 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_ler_01, best cost 63.5398 + 3022.26 = 3085.8 over 23 frames.
+S_S17_W_ler_01 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_mootj_01, best cost 59.14 + 2034.03 = 2093.17 over 17 frames.
+S_S17_W_mootj_01 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_mootj_02, best cost 104.985 + 1781.84 = 1886.82 over 16 frames.
+S_S17_W_mootj_02 một 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_mootj_03, best cost 104.507 + 2570.53 = 2675.04 over 22 frames.
+S_S17_W_mootj_03 một 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_mootj_04, best cost 118.368 + 2962.97 = 3081.33 over 25 frames.
+S_S17_W_mootj_04 một 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_mootj_05, best cost 103.209 + 1954.15 = 2057.36 over 19 frames.
+S_S17_W_mootj_05 một 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_mootj_06, best cost 109.025 + 1993.17 = 2102.19 over 18 frames.
+S_S17_W_mootj_06 một 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_moots_01, best cost 105.581 + 2513.02 = 2618.6 over 26 frames.
+S_S17_W_moots_01 một 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_muowi_01, best cost 93.109 + 2366.59 = 2459.7 over 20 frames.
+S_S17_W_muowi_01 mươi 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_muowi_02, best cost 87.1263 + 1776.37 = 1863.5 over 17 frames.
+S_S17_W_muowi_02 mươi 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_muowi_03, best cost 88.1705 + 2164.19 = 2252.36 over 20 frames.
+S_S17_W_muowi_03 mươi 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_muowi_04, best cost 59.5298 + 2215.64 = 2275.17 over 18 frames.
+S_S17_W_muowi_04 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_muowi_05, best cost 58.912 + 2113.49 = 2172.4 over 19 frames.
+S_S17_W_muowi_05 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_muowi_06, best cost 58.0657 + 1909.34 = 1967.41 over 17 frames.
+S_S17_W_muowi_06 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_muowi_07, best cost 56.5273 + 1455.71 = 1512.23 over 13 frames.
+S_S17_W_muowi_07 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_muowi_08, best cost 57.1758 + 1775.61 = 1832.78 over 15 frames.
+S_S17_W_muowi_08 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_muowi_09, best cost 55.4094 + 1383.54 = 1438.95 over 13 frames.
+S_S17_W_muowi_09 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_muowi_10, best cost 56.5711 + 1603.26 = 1659.83 over 13 frames.
+S_S17_W_muowi_10 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_muowi_11, best cost 88.1913 + 2034.99 = 2123.18 over 20 frames.
+S_S17_W_muowi_11 mươi 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_muowi_12, best cost 61.0777 + 2226.72 = 2287.8 over 20 frames.
+S_S17_W_muowi_12 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_muowi_13, best cost 87.0781 + 1924.64 = 2011.72 over 16 frames.
+S_S17_W_muowi_13 mươi 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_muowi_14, best cost 84.8838 + 1736 = 1820.88 over 15 frames.
+S_S17_W_muowi_14 mươi 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_muowi_15, best cost 92.6345 + 2018.96 = 2111.6 over 21 frames.
+S_S17_W_muowi_15 mươi 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_muowi_16, best cost 86.9941 + 2071.15 = 2158.15 over 18 frames.
+S_S17_W_muowi_16 mươi 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_muowi_17, best cost 84.0156 + 1320.9 = 1404.92 over 12 frames.
+S_S17_W_muowi_17 mươi 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_muowi_18, best cost 96.7075 + 2713.81 = 2810.51 over 25 frames.
+S_S17_W_muowi_18 mươi 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_muowi_19, best cost 57.8774 + 1635.78 = 1693.66 over 15 frames.
+S_S17_W_muowi_19 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_muowi_20, best cost 99.0878 + 2772.71 = 2871.8 over 27 frames.
+S_S17_W_muowi_20 mươi 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_muowi_21, best cost 54.7208 + 1283.94 = 1338.66 over 10 frames.
+S_S17_W_muowi_21 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_muowif_01, best cost 100.882 + 3106.53 = 3207.42 over 32 frames.
+S_S17_W_muowif_01 mươi 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_nawm_01, best cost 113.29 + 3881.81 = 3995.1 over 36 frames.
+S_S17_W_nawm_01 năm 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_nawm_02, best cost 113.559 + 2622.47 = 2736.03 over 25 frames.
+S_S17_W_nawm_02 năm 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_nawm_03, best cost 117.714 + 2648.67 = 2766.38 over 26 frames.
+S_S17_W_nawm_03 năm 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_saus_01, best cost 97.0959 + 3252.65 = 3349.75 over 31 frames.
+S_S17_W_saus_01 sáu 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_saus_02, best cost 156.309 + 4074.2 = 4230.51 over 42 frames.
+S_S17_W_saus_02 sáu một 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_saus_03, best cost 107.337 + 3900.77 = 4008.1 over 41 frames.
+S_S17_W_saus_03 sáu 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_saus_04, best cost 108.559 + 4251.22 = 4359.78 over 44 frames.
+S_S17_W_saus_04 sáu 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_saus_05, best cost 109.764 + 4868.57 = 4978.33 over 47 frames.
+S_S17_W_saus_05 sáu 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_saus_06, best cost 103.9 + 2698.52 = 2802.42 over 24 frames.
+S_S17_W_saus_06 sáu 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_saus_07, best cost 96.5664 + 2592.39 = 2688.95 over 24 frames.
+S_S17_W_saus_07 sáu 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_saus_08, best cost 62.8842 + 2682.52 = 2745.41 over 23 frames.
+S_S17_W_saus_08 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_saus_09, best cost 94.5861 + 1737.04 = 1831.62 over 15 frames.
+S_S17_W_saus_09 sáu 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_saus_10, best cost 96.7911 + 2913.28 = 3010.07 over 28 frames.
+S_S17_W_saus_10 sáu 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_saus_11, best cost 100.198 + 3452.92 = 3553.12 over 36 frames.
+S_S17_W_saus_11 sáu 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_tams_01, best cost 107.189 + 2549.53 = 2656.72 over 23 frames.
+S_S17_W_tams_01 năm 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_tams_02, best cost 113.153 + 3149.39 = 3262.55 over 33 frames.
+S_S17_W_tams_02 tám 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_tams_03, best cost 62.2966 + 2228.64 = 2290.93 over 22 frames.
+S_S17_W_tams_03 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_tams_04, best cost 59.9025 + 2304.44 = 2364.34 over 18 frames.
+S_S17_W_tams_04 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_tams_05, best cost 60.0336 + 2158.6 = 2218.63 over 18 frames.
+S_S17_W_tams_05 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_tams_06, best cost 59.2274 + 2097.77 = 2157 over 17 frames.
+S_S17_W_tams_06 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_tams_07, best cost 60.4026 + 1914.88 = 1975.29 over 19 frames.
+S_S17_W_tams_07 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_tams_08, best cost 106.934 + 2073.36 = 2180.29 over 20 frames.
+S_S17_W_tams_08 năm 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_trawm_01, best cost 65.7591 + 3301 = 3366.76 over 27 frames.
+S_S17_W_trawm_01 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_trawm_02, best cost 68.2578 + 3465.16 = 3533.41 over 32 frames.
+S_S17_W_trawm_02 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_trawm_03, best cost 58.0085 + 1689.75 = 1747.76 over 15 frames.
+S_S17_W_trawm_03 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_trawm_04, best cost 59.0526 + 2226.26 = 2285.31 over 17 frames.
+S_S17_W_trawm_04 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_trawm_05, best cost 113.825 + 3986.43 = 4100.25 over 32 frames.
+S_S17_W_trawm_05 chín 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_trawm_06, best cost 105.694 + 1767.52 = 1873.21 over 17 frames.
+S_S17_W_trawm_06 năm 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_trawm_07, best cost 63.6903 + 2682.36 = 2746.05 over 24 frames.
+S_S17_W_trawm_07 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_trawm_08, best cost 63.7777 + 2962.79 = 3026.57 over 24 frames.
+S_S17_W_trawm_08 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_trawm_09, best cost 61.3399 + 2829.02 = 2890.36 over 20 frames.
+S_S17_W_trawm_09 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_trawm_10, best cost 57.1587 + 1706.01 = 1763.17 over 14 frames.
+S_S17_W_trawm_10 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_trawm_11, best cost 107.305 + 2142.87 = 2250.18 over 20 frames.
+S_S17_W_trawm_11 năm 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_trawm_12, best cost 113.511 + 2558.46 = 2671.97 over 22 frames.
+S_S17_W_trawm_12 năm 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_trawm_13, best cost 110.56 + 2359.58 = 2470.14 over 23 frames.
+S_S17_W_trawm_13 năm 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_trawm_14, best cost 115.62 + 2917.13 = 3032.75 over 25 frames.
+S_S17_W_trawm_14 năm 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_trawm_15, best cost 59.0526 + 2001.21 = 2060.26 over 17 frames.
+S_S17_W_trawm_15 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_trawm_16, best cost 63.1027 + 3029.8 = 3092.9 over 23 frames.
+S_S17_W_trawm_16 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_trawm_17, best cost 65.0404 + 3024.7 = 3089.74 over 26 frames.
+S_S17_W_trawm_17 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_trawm_18, best cost 59.0963 + 1944.04 = 2003.14 over 17 frames.
+S_S17_W_trawm_18 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_trawm_19, best cost 105.94 + 1669.7 = 1775.64 over 17 frames.
+S_S17_W_trawm_19 năm 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_trawm_20, best cost 106.312 + 1972.96 = 2079.28 over 18 frames.
+S_S17_W_trawm_20 năm 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_trawm_21, best cost 103.059 + 2680.86 = 2783.92 over 24 frames.
+S_S17_W_trawm_21 sáu 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S17_W_trawm_22, best cost 106.422 + 2031.29 = 2137.71 over 17 frames.
+S_S17_W_trawm_22 năm 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_ba_01, best cost 101.393 + 1447.96 = 1549.35 over 14 frames.
+S_S19_W_ba_01 bảy 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_ba_02, best cost 106.437 + 3475.32 = 3581.76 over 35 frames.
+S_S19_W_ba_02 bảy 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_ba_03, best cost 58.4821 + 1918.3 = 1976.78 over 17 frames.
+S_S19_W_ba_03 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_ba_04, best cost 103.334 + 2247.09 = 2350.42 over 23 frames.
+S_S19_W_ba_04 bảy 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_ba_05, best cost 111.521 + 3476.27 = 3587.79 over 37 frames.
+S_S19_W_ba_05 bảy 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_ba_06, best cost 114.033 + 3369.07 = 3483.11 over 39 frames.
+S_S19_W_ba_06 ba 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_ba_07, best cost 61.4237 + 2404.76 = 2466.18 over 21 frames.
+S_S19_W_ba_07 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_ba_08, best cost 57.1149 + 1479.3 = 1536.42 over 14 frames.
+S_S19_W_ba_08 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_ba_09, best cost 58.9422 + 1989.07 = 2048.01 over 17 frames.
+S_S19_W_ba_09 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_ba_10, best cost 113.912 + 3989.49 = 4103.4 over 41 frames.
+S_S19_W_ba_10 tám 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_ba_11, best cost 105.858 + 2990.34 = 3096.2 over 34 frames.
+S_S19_W_ba_11 tám 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_bayr_01, best cost 97.8511 + 2163.15 = 2261 over 19 frames.
+S_S19_W_bayr_01 bảy 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_bayr_02, best cost 98.0793 + 2390.9 = 2488.97 over 20 frames.
+S_S19_W_bayr_02 bảy 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_bayr_03, best cost 97.3762 + 2426.8 = 2524.17 over 21 frames.
+S_S19_W_bayr_03 bảy 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_bayr_04, best cost 97.6578 + 2306.59 = 2404.25 over 19 frames.
+S_S19_W_bayr_04 bảy 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_bayr_05, best cost 64.7587 + 2784.81 = 2849.57 over 25 frames.
+S_S19_W_bayr_05 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_bayr_06, best cost 100.651 + 3659.31 = 3759.97 over 32 frames.
+S_S19_W_bayr_06 bảy 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_bayr_07, best cost 109.984 + 3527.99 = 3637.98 over 32 frames.
+S_S19_W_bayr_07 bảy 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_bayr_08, best cost 62.7337 + 2794.68 = 2857.41 over 22 frames.
+S_S19_W_bayr_08 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_bayr_09, best cost 95.0518 + 1636.33 = 1731.38 over 15 frames.
+S_S19_W_bayr_09 bảy 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_boons_01, best cost 100.269 + 1404.03 = 1504.3 over 14 frames.
+S_S19_W_boons_01 một 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_boons_02, best cost 105.496 + 2626.39 = 2731.88 over 23 frames.
+S_S19_W_boons_02 một 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_chins_01, best cost 112.835 + 3341.58 = 3454.42 over 27 frames.
+S_S19_W_chins_01 chín 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_chins_02, best cost 104.756 + 2516.42 = 2621.18 over 19 frames.
+S_S19_W_chins_02 chín 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_chins_03, best cost 104.945 + 2507.48 = 2612.43 over 21 frames.
+S_S19_W_chins_03 chín 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_chins_04, best cost 104.314 + 1931.48 = 2035.79 over 16 frames.
+S_S19_W_chins_04 chín 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_hai_01, best cost 123.325 + 4640.68 = 4764 over 49 frames.
+S_S19_W_hai_01 tám 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_hai_02, best cost 61.9036 + 2653.21 = 2715.11 over 27 frames.
+S_S19_W_hai_02 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_hai_03, best cost 58.5524 + 1681.46 = 1740.01 over 16 frames.
+S_S19_W_hai_03 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_hai_04, best cost 52.6219 + 931.601 = 984.223 over 9 frames.
+S_S19_W_hai_04 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_hai_05, best cost 122.284 + 4625.73 = 4748.01 over 50 frames.
+S_S19_W_hai_05 bảy 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_hai_06, best cost 57.6588 + 1641.03 = 1698.69 over 15 frames.
+S_S19_W_hai_06 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_hai_07, best cost 119.717 + 3496.2 = 3615.92 over 39 frames.
+S_S19_W_hai_07 tám 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_hai_08, best cost 59.523 + 2237.47 = 2296.99 over 25 frames.
+S_S19_W_hai_08 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_hai_09, best cost 65.3901 + 2835.96 = 2901.35 over 26 frames.
+S_S19_W_hai_09 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_hai_10, best cost 63.9282 + 2859.67 = 2923.6 over 25 frames.
+S_S19_W_hai_10 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_lawm_01, best cost 125.345 + 4387 = 4512.35 over 43 frames.
+S_S19_W_lawm_01 một 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_ler_01, best cost 63.5398 + 3014.05 = 3077.59 over 23 frames.
+S_S19_W_ler_01 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_mootj_01, best cost 59.14 + 2037.11 = 2096.25 over 17 frames.
+S_S19_W_mootj_01 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_mootj_02, best cost 104.985 + 1781.7 = 1886.68 over 16 frames.
+S_S19_W_mootj_02 một 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_mootj_03, best cost 104.507 + 2569.34 = 2673.85 over 22 frames.
+S_S19_W_mootj_03 một 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_mootj_04, best cost 118.368 + 2961.67 = 3080.04 over 25 frames.
+S_S19_W_mootj_04 một 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_mootj_05, best cost 103.209 + 1951.69 = 2054.9 over 19 frames.
+S_S19_W_mootj_05 một 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_mootj_06, best cost 109.025 + 1996.47 = 2105.5 over 18 frames.
+S_S19_W_mootj_06 một 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_moots_01, best cost 105.477 + 2519.5 = 2624.98 over 26 frames.
+S_S19_W_moots_01 một 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_muowi_01, best cost 93.109 + 2367.84 = 2460.95 over 20 frames.
+S_S19_W_muowi_01 mươi 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_muowi_02, best cost 87.1263 + 1777.52 = 1864.65 over 17 frames.
+S_S19_W_muowi_02 mươi 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_muowi_03, best cost 88.1705 + 2159.07 = 2247.24 over 20 frames.
+S_S19_W_muowi_03 mươi 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_muowi_04, best cost 59.5298 + 2212.2 = 2271.73 over 18 frames.
+S_S19_W_muowi_04 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_muowi_05, best cost 58.912 + 2109.53 = 2168.44 over 19 frames.
+S_S19_W_muowi_05 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_muowi_06, best cost 58.0657 + 1903.49 = 1961.55 over 17 frames.
+S_S19_W_muowi_06 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_muowi_07, best cost 56.5273 + 1452.41 = 1508.94 over 13 frames.
+S_S19_W_muowi_07 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_muowi_08, best cost 57.1758 + 1781.01 = 1838.18 over 15 frames.
+S_S19_W_muowi_08 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_muowi_09, best cost 55.4094 + 1380.99 = 1436.4 over 13 frames.
+S_S19_W_muowi_09 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_muowi_10, best cost 56.5711 + 1599.91 = 1656.48 over 13 frames.
+S_S19_W_muowi_10 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_muowi_11, best cost 88.1913 + 2034.93 = 2123.12 over 20 frames.
+S_S19_W_muowi_11 mươi 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_muowi_12, best cost 61.0777 + 2226.76 = 2287.84 over 20 frames.
+S_S19_W_muowi_12 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_muowi_13, best cost 87.0781 + 1930.4 = 2017.48 over 16 frames.
+S_S19_W_muowi_13 mươi 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_muowi_14, best cost 84.8838 + 1736.04 = 1820.93 over 15 frames.
+S_S19_W_muowi_14 mươi 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_muowi_15, best cost 91.9471 + 2017.44 = 2109.39 over 21 frames.
+S_S19_W_muowi_15 mươi 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_muowi_16, best cost 86.9941 + 2065.06 = 2152.06 over 18 frames.
+S_S19_W_muowi_16 mươi 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_muowi_17, best cost 84.0156 + 1324.05 = 1408.06 over 12 frames.
+S_S19_W_muowi_17 mươi 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_muowi_18, best cost 96.7075 + 2709.57 = 2806.28 over 25 frames.
+S_S19_W_muowi_18 mươi 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_muowi_19, best cost 85.4873 + 1603.51 = 1689 over 15 frames.
+S_S19_W_muowi_19 mươi 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_muowi_20, best cost 98.814 + 2769.38 = 2868.2 over 27 frames.
+S_S19_W_muowi_20 mươi 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_muowi_21, best cost 54.7208 + 1285.85 = 1340.57 over 10 frames.
+S_S19_W_muowi_21 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_muowif_01, best cost 100.882 + 3106.81 = 3207.69 over 32 frames.
+S_S19_W_muowif_01 mươi 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_nawm_01, best cost 112.886 + 3885.94 = 3998.83 over 36 frames.
+S_S19_W_nawm_01 năm 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_nawm_02, best cost 113.559 + 2624.63 = 2738.19 over 25 frames.
+S_S19_W_nawm_02 năm 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_nawm_03, best cost 117.757 + 2655.3 = 2773.05 over 26 frames.
+S_S19_W_nawm_03 năm 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_saus_01, best cost 97.0959 + 3248.86 = 3345.96 over 31 frames.
+S_S19_W_saus_01 sáu 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_saus_02, best cost 156.309 + 4056.33 = 4212.64 over 42 frames.
+S_S19_W_saus_02 sáu một 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_saus_03, best cost 107.221 + 3909 = 4016.22 over 41 frames.
+S_S19_W_saus_03 sáu 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_saus_04, best cost 108.463 + 4251.48 = 4359.95 over 44 frames.
+S_S19_W_saus_04 sáu 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_saus_05, best cost 109.764 + 4863.29 = 4973.05 over 47 frames.
+S_S19_W_saus_05 sáu 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_saus_06, best cost 103.9 + 2697.73 = 2801.63 over 24 frames.
+S_S19_W_saus_06 sáu 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_saus_07, best cost 96.5664 + 2581.17 = 2677.74 over 24 frames.
+S_S19_W_saus_07 sáu 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_saus_08, best cost 62.8842 + 2681.12 = 2744.01 over 23 frames.
+S_S19_W_saus_08 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_saus_09, best cost 94.5861 + 1735.43 = 1830.02 over 15 frames.
+S_S19_W_saus_09 sáu 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_saus_10, best cost 96.7911 + 2910.98 = 3007.78 over 28 frames.
+S_S19_W_saus_10 sáu 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_saus_11, best cost 99.9434 + 3444.69 = 3544.63 over 36 frames.
+S_S19_W_saus_11 sáu 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_tams_01, best cost 110.042 + 2559.72 = 2669.76 over 23 frames.
+S_S19_W_tams_01 tám 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_tams_02, best cost 113.153 + 3146.36 = 3259.52 over 33 frames.
+S_S19_W_tams_02 tám 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_tams_03, best cost 62.2966 + 2228.55 = 2290.85 over 22 frames.
+S_S19_W_tams_03 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_tams_04, best cost 59.9025 + 2306.94 = 2366.85 over 18 frames.
+S_S19_W_tams_04 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_tams_05, best cost 60.0336 + 2158.69 = 2218.72 over 18 frames.
+S_S19_W_tams_05 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_tams_06, best cost 59.2274 + 2104.69 = 2163.92 over 17 frames.
+S_S19_W_tams_06 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_tams_07, best cost 60.4026 + 1918.69 = 1979.09 over 19 frames.
+S_S19_W_tams_07 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_tams_08, best cost 106.934 + 2084.41 = 2191.34 over 20 frames.
+S_S19_W_tams_08 năm 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_trawm_01, best cost 65.7591 + 3309.82 = 3375.58 over 27 frames.
+S_S19_W_trawm_01 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_trawm_02, best cost 68.2578 + 3462.48 = 3530.74 over 32 frames.
+S_S19_W_trawm_02 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_trawm_03, best cost 58.0085 + 1689.17 = 1747.18 over 15 frames.
+S_S19_W_trawm_03 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_trawm_04, best cost 59.0526 + 2226.2 = 2285.25 over 17 frames.
+S_S19_W_trawm_04 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_trawm_05, best cost 113.781 + 3983.29 = 4097.07 over 32 frames.
+S_S19_W_trawm_05 chín 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_trawm_06, best cost 105.694 + 1765.04 = 1870.73 over 17 frames.
+S_S19_W_trawm_06 năm 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_trawm_07, best cost 63.6903 + 2690.82 = 2754.51 over 24 frames.
+S_S19_W_trawm_07 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_trawm_08, best cost 63.7777 + 2971.7 = 3035.48 over 24 frames.
+S_S19_W_trawm_08 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_trawm_09, best cost 61.3399 + 2832.87 = 2894.21 over 20 frames.
+S_S19_W_trawm_09 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_trawm_10, best cost 57.1587 + 1708.89 = 1766.05 over 14 frames.
+S_S19_W_trawm_10 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_trawm_11, best cost 107.305 + 2141.88 = 2249.18 over 20 frames.
+S_S19_W_trawm_11 năm 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_trawm_12, best cost 113.511 + 2561.81 = 2675.32 over 22 frames.
+S_S19_W_trawm_12 năm 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_trawm_13, best cost 110.56 + 2355.84 = 2466.4 over 23 frames.
+S_S19_W_trawm_13 năm 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_trawm_14, best cost 115.62 + 2911.78 = 3027.4 over 25 frames.
+S_S19_W_trawm_14 năm 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_trawm_15, best cost 59.0526 + 2000.07 = 2059.12 over 17 frames.
+S_S19_W_trawm_15 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_trawm_16, best cost 63.1027 + 3051.23 = 3114.34 over 23 frames.
+S_S19_W_trawm_16 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_trawm_17, best cost 65.0404 + 3017.02 = 3082.06 over 26 frames.
+S_S19_W_trawm_17 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_trawm_18, best cost 59.0963 + 1937.31 = 1996.4 over 17 frames.
+S_S19_W_trawm_18 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_trawm_19, best cost 105.94 + 1670.04 = 1775.98 over 17 frames.
+S_S19_W_trawm_19 năm 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_trawm_20, best cost 106.312 + 1973.2 = 2079.51 over 18 frames.
+S_S19_W_trawm_20 năm 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_trawm_21, best cost 103.059 + 2684.53 = 2787.59 over 24 frames.
+S_S19_W_trawm_21 sáu 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S19_W_trawm_22, best cost 106.422 + 2032.07 = 2138.49 over 17 frames.
+S_S19_W_trawm_22 năm 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_ba_01, best cost 94.5298 + 1002.16 = 1096.69 over 10 frames.
+S_S22_W_ba_01 bảy 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_ba_02, best cost 103.442 + 2639.88 = 2743.32 over 27 frames.
+S_S22_W_ba_02 tám 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_ba_03, best cost 53.8273 + 951.796 = 1005.62 over 9 frames.
+S_S22_W_ba_03 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_ba_04, best cost 103.442 + 2470 = 2573.44 over 27 frames.
+S_S22_W_ba_04 tám 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_ba_05, best cost 103.737 + 2214.6 = 2318.34 over 23 frames.
+S_S22_W_ba_05 ba 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_ba_06, best cost 103.787 + 2512.42 = 2616.21 over 28 frames.
+S_S22_W_ba_06 tám 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_ba_07, best cost 55.4396 + 1390.05 = 1445.49 over 11 frames.
+S_S22_W_ba_07 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_ba_08, best cost 51.3894 + 522.211 = 573.6 over 5 frames.
+S_S22_W_ba_08 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_ba_09, best cost 56.7896 + 1563.06 = 1619.85 over 13 frames.
+S_S22_W_ba_09 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_ba_10, best cost 102.406 + 2232.66 = 2335.07 over 24 frames.
+S_S22_W_ba_10 tám 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_ba_11, best cost 103.096 + 2502.17 = 2605.27 over 26 frames.
+S_S22_W_ba_11 tám 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_bayr_01, best cost 94.9922 + 1670.83 = 1765.82 over 12 frames.
+S_S22_W_bayr_01 bảy 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_bayr_02, best cost 102.464 + 2096.95 = 2199.42 over 18 frames.
+S_S22_W_bayr_02 bảy 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_bayr_03, best cost 93.2433 + 897.525 = 990.769 over 8 frames.
+S_S22_W_bayr_03 bảy 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_bayr_04, best cost 93.4597 + 912.77 = 1006.23 over 9 frames.
+S_S22_W_bayr_04 bảy 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_bayr_05, best cost 98.5414 + 2869.92 = 2968.46 over 26 frames.
+S_S22_W_bayr_05 bảy 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_bayr_06, best cost 107.657 + 3129.13 = 3236.79 over 29 frames.
+S_S22_W_bayr_06 bảy 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_bayr_07, best cost 105.852 + 2994.7 = 3100.55 over 25 frames.
+S_S22_W_bayr_07 bảy 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_bayr_08, best cost 102.541 + 1951.56 = 2054.1 over 16 frames.
+S_S22_W_bayr_08 bảy 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_bayr_09, best cost 55.3084 + 1429.56 = 1484.87 over 11 frames.
+S_S22_W_bayr_09 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_boons_01, best cost 57.4646 + 1637.42 = 1694.89 over 14 frames.
+S_S22_W_boons_01 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_boons_02, best cost 60.1404 + 2427.46 = 2487.6 over 19 frames.
+S_S22_W_boons_02 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_chins_01, best cost 61.6653 + 2692.64 = 2754.31 over 21 frames.
+S_S22_W_chins_01 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_chins_02, best cost 103.871 + 1853.95 = 1957.82 over 14 frames.
+S_S22_W_chins_02 chín 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_chins_03, best cost 104.13 + 2225.76 = 2329.89 over 18 frames.
+S_S22_W_chins_03 chín 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_chins_04, best cost 54.6334 + 1425.2 = 1479.83 over 10 frames.
+S_S22_W_chins_04 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_hai_01, best cost 128.554 + 6001.53 = 6130.08 over 56 frames.
+S_S22_W_hai_01 tám 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_hai_02, best cost 111.002 + 3418.9 = 3529.9 over 35 frames.
+S_S22_W_hai_02 bảy 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_hai_03, best cost 60.2278 + 2234.79 = 2295.01 over 19 frames.
+S_S22_W_hai_03 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_hai_04, best cost 58.1397 + 1742.95 = 1801.09 over 15 frames.
+S_S22_W_hai_04 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_hai_05, best cost 111.16 + 3601.27 = 3712.43 over 35 frames.
+S_S22_W_hai_05 bảy 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_hai_06, best cost 58.8147 + 1888.6 = 1947.41 over 16 frames.
+S_S22_W_hai_06 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_hai_07, best cost 104.343 + 3268.51 = 3372.85 over 32 frames.
+S_S22_W_hai_07 hai 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_hai_08, best cost 109.305 + 3074.1 = 3183.4 over 30 frames.
+S_S22_W_hai_08 bảy 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_hai_09, best cost 60.796 + 2246.54 = 2307.33 over 19 frames.
+S_S22_W_hai_09 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_hai_10, best cost 60.0773 + 2174.73 = 2234.81 over 18 frames.
+S_S22_W_hai_10 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_lawm_01, best cost 116.151 + 3080.9 = 3197.05 over 28 frames.
+S_S22_W_lawm_01 một 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_ler_01, best cost 59.5091 + 2075.24 = 2134.75 over 18 frames.
+S_S22_W_ler_01 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_mootj_01, best cost 102.134 + 2553.84 = 2655.97 over 20 frames.
+S_S22_W_mootj_01 một 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_mootj_02, best cost 56.9838 + 1830.44 = 1887.43 over 14 frames.
+S_S22_W_mootj_02 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_mootj_03, best cost 52.0644 + 744.692 = 796.757 over 6 frames.
+S_S22_W_mootj_03 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_mootj_04, best cost 52.7395 + 908.759 = 961.498 over 7 frames.
+S_S22_W_mootj_04 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_mootj_05, best cost 56.5711 + 1698.79 = 1755.36 over 13 frames.
+S_S22_W_mootj_05 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_mootj_06, best cost 60.121 + 2232.8 = 2292.93 over 18 frames.
+S_S22_W_mootj_06 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_moots_01, best cost 107.085 + 2482.5 = 2589.58 over 22 frames.
+S_S22_W_moots_01 một 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_muowi_01, best cost 93.3036 + 2431.59 = 2524.89 over 20 frames.
+S_S22_W_muowi_01 mươi 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_muowi_02, best cost 93.8345 + 2148.93 = 2242.76 over 18 frames.
+S_S22_W_muowi_02 mươi 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_muowi_03, best cost 87.8827 + 2297.11 = 2385 over 20 frames.
+S_S22_W_muowi_03 mươi 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_muowi_04, best cost 58.4213 + 2095.56 = 2153.98 over 16 frames.
+S_S22_W_muowi_04 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_muowi_05, best cost 53.9584 + 1111.89 = 1165.85 over 9 frames.
+S_S22_W_muowi_05 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_muowi_06, best cost 55.0196 + 1313.25 = 1368.27 over 12 frames.
+S_S22_W_muowi_06 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_muowi_07, best cost 59.9899 + 2340.66 = 2400.65 over 18 frames.
+S_S22_W_muowi_07 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_muowi_08, best cost 56.5846 + 1837.27 = 1893.86 over 15 frames.
+S_S22_W_muowi_08 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_muowi_09, best cost 87.3224 + 2192.77 = 2280.09 over 18 frames.
+S_S22_W_muowi_09 mươi 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_muowi_10, best cost 55.896 + 1807.59 = 1863.49 over 12 frames.
+S_S22_W_muowi_10 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_muowi_11, best cost 59.6839 + 2340.84 = 2400.53 over 18 frames.
+S_S22_W_muowi_11 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_muowi_12, best cost 57.9783 + 2223.08 = 2281.06 over 17 frames.
+S_S22_W_muowi_12 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_muowi_13, best cost 59.4861 + 2308.83 = 2368.32 over 18 frames.
+S_S22_W_muowi_13 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_muowi_14, best cost 54.6771 + 1434.66 = 1489.34 over 10 frames.
+S_S22_W_muowi_14 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_muowi_15, best cost 59.026 + 2153.09 = 2212.11 over 18 frames.
+S_S22_W_muowi_15 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_muowi_16, best cost 85.8142 + 1604.35 = 1690.16 over 14 frames.
+S_S22_W_muowi_16 mươi 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_muowi_17, best cost 86.0361 + 1985.27 = 2071.31 over 16 frames.
+S_S22_W_muowi_17 mươi 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_muowi_18, best cost 58.7673 + 2249.35 = 2308.11 over 17 frames.
+S_S22_W_muowi_18 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_muowi_19, best cost 57.2461 + 1842.96 = 1900.2 over 14 frames.
+S_S22_W_muowi_19 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_muowi_20, best cost 111.868 + 2954.34 = 3066.21 over 26 frames.
+S_S22_W_muowi_20 một 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_muowi_21, best cost 53.4145 + 1000.39 = 1053.8 over 8 frames.
+S_S22_W_muowi_21 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_muowif_01, best cost 98.5107 + 2802.4 = 2900.91 over 26 frames.
+S_S22_W_muowif_01 mươi 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_nawm_01, best cost 106.934 + 2533.72 = 2640.65 over 20 frames.
+S_S22_W_nawm_01 năm 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_nawm_02, best cost 107.25 + 1899.9 = 2007.15 over 16 frames.
+S_S22_W_nawm_02 năm 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_nawm_03, best cost 58.0085 + 1923.77 = 1981.77 over 15 frames.
+S_S22_W_nawm_03 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_saus_01, best cost 118.498 + 4395.51 = 4514.01 over 36 frames.
+S_S22_W_saus_01 sáu 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_saus_02, best cost 120.712 + 4935.5 = 5056.21 over 43 frames.
+S_S22_W_saus_02 sáu 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_saus_03, best cost 116.591 + 3937.78 = 4054.37 over 34 frames.
+S_S22_W_saus_03 sáu 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_saus_04, best cost 116.578 + 3799.67 = 3916.25 over 34 frames.
+S_S22_W_saus_04 sáu 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_saus_05, best cost 115.551 + 3529.99 = 3645.54 over 33 frames.
+S_S22_W_saus_05 sáu 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_saus_06, best cost 59.5091 + 2512.31 = 2571.82 over 18 frames.
+S_S22_W_saus_06 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_saus_07, best cost 62.1898 + 2680.49 = 2742.68 over 21 frames.
+S_S22_W_saus_07 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_saus_08, best cost 62.7337 + 2639.75 = 2702.49 over 22 frames.
+S_S22_W_saus_08 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_saus_09, best cost 56.9838 + 2008.67 = 2065.66 over 14 frames.
+S_S22_W_saus_09 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_saus_10, best cost 58.8777 + 2271.33 = 2330.21 over 17 frames.
+S_S22_W_saus_10 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_saus_11, best cost 112.048 + 3127.91 = 3239.96 over 27 frames.
+S_S22_W_saus_11 tám 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_tams_01, best cost 101.482 + 2127.68 = 2229.16 over 20 frames.
+S_S22_W_tams_01 tám 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_tams_02, best cost 104.984 + 3049.43 = 3154.42 over 31 frames.
+S_S22_W_tams_02 tám 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_tams_03, best cost 62.3403 + 2474.45 = 2536.79 over 22 frames.
+S_S22_W_tams_03 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_tams_04, best cost 60.4463 + 2294.18 = 2354.63 over 19 frames.
+S_S22_W_tams_04 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_tams_05, best cost 56.6148 + 1440.1 = 1496.72 over 13 frames.
+S_S22_W_tams_05 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_tams_06, best cost 55.3084 + 1156.94 = 1212.25 over 11 frames.
+S_S22_W_tams_06 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_tams_07, best cost 58.5524 + 1922.76 = 1981.32 over 16 frames.
+S_S22_W_tams_07 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_tams_08, best cost 56.6585 + 1405.43 = 1462.09 over 13 frames.
+S_S22_W_tams_08 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_trawm_01, best cost 124.761 + 5415.79 = 5540.55 over 43 frames.
+S_S22_W_trawm_01 tám 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_trawm_02, best cost 64.5595 + 3250.52 = 3315.07 over 26 frames.
+S_S22_W_trawm_02 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_trawm_03, best cost 112.779 + 3076.25 = 3189.03 over 25 frames.
+S_S22_W_trawm_03 một 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_trawm_04, best cost 61.1214 + 2431.76 = 2492.88 over 20 frames.
+S_S22_W_trawm_04 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_trawm_05, best cost 59.815 + 2227.7 = 2287.51 over 18 frames.
+S_S22_W_trawm_05 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_trawm_06, best cost 111.1 + 2519.5 = 2630.6 over 22 frames.
+S_S22_W_trawm_06 một 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_trawm_07, best cost 59.14 + 2084.21 = 2143.35 over 17 frames.
+S_S22_W_trawm_07 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_trawm_08, best cost 59.1837 + 2032.9 = 2092.08 over 17 frames.
+S_S22_W_trawm_08 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_trawm_09, best cost 60.3589 + 2222.94 = 2283.3 over 19 frames.
+S_S22_W_trawm_09 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_trawm_10, best cost 55.3084 + 1227.75 = 1283.05 over 11 frames.
+S_S22_W_trawm_10 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_trawm_11, best cost 61.0777 + 2320.31 = 2381.38 over 20 frames.
+S_S22_W_trawm_11 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_trawm_12, best cost 58.5087 + 1898.32 = 1956.83 over 16 frames.
+S_S22_W_trawm_12 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_trawm_13, best cost 58.5087 + 1729.29 = 1787.8 over 16 frames.
+S_S22_W_trawm_13 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_trawm_14, best cost 58.465 + 1926.78 = 1985.25 over 16 frames.
+S_S22_W_trawm_14 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_trawm_15, best cost 57.2898 + 1857.09 = 1914.38 over 14 frames.
+S_S22_W_trawm_15 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_trawm_16, best cost 61.1651 + 2342.53 = 2403.69 over 20 frames.
+S_S22_W_trawm_16 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_trawm_17, best cost 55.3521 + 1475.24 = 1530.59 over 11 frames.
+S_S22_W_trawm_17 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_trawm_18, best cost 58.6835 + 1871.2 = 1929.89 over 16 frames.
+S_S22_W_trawm_18 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_trawm_19, best cost 59.14 + 2099.76 = 2158.9 over 17 frames.
+S_S22_W_trawm_19 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_trawm_20, best cost 55.2647 + 1405.76 = 1461.02 over 11 frames.
+S_S22_W_trawm_20 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_trawm_21, best cost 55.8523 + 1569.69 = 1625.54 over 12 frames.
+S_S22_W_trawm_21 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:99) For utterance S_S22_W_trawm_22, best cost 57.9648 + 2095.15 = 2153.11 over 15 frames.
+S_S22_W_trawm_22 
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:124) Overall cost per frame is 114.69 = 3.84698 [graph] + 110.843 [acoustic] over 7303 frames.
+LOG (lattice-best-path[5.5.1023~1-d673]:main():lattice-best-path.cc:128) Done 333 lattices, failed for 0
+# Accounting: time=0 threads=1
+# Ended (code 0) at Thứ ba, 17 Tháng 5 năm 2022 11:04:29 +07, elapsed time 0 seconds
