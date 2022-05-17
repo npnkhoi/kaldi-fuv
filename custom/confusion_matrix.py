@@ -24,7 +24,7 @@ def create_confusion_matrix(type):
 
     ax = sns.heatmap(cf_matrix, annot=True, cmap='Blues')
 
-    ax.set_title(f'{type.capitalize()} Confusion Matrix')
+    ax.set_title(f'Confusion Matrix - {type.capitalize()} Model - {len(actual)} Words')
     ax.set_xlabel('Prediction')
     ax.set_ylabel('Actual')
 
