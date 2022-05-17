@@ -38,7 +38,7 @@ def create_confusion_matrix(type):
 
     ## Save the visualization of the Confusion Matrix.
     # plt.figure(figsize=(20,20))
-    plt.savefig(f"{type}_confusion_matrix.png")
+    plt.savefig(f"confusion_matrix/{type}_confusion_matrix.png")
     plt.show()
     print(f"Save image at {type}_confusion_matrix.png")
 
