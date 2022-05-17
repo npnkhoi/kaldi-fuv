@@ -43,7 +43,7 @@ def create_confusion_matrix(type):
     ## Save the visualization of the Confusion Matrix.
     # plt.figure(figsize=(20,20))
     plt.savefig(f"{type}_confusion_matrix.png")
-    print("Save image")
+    print(f"Save image at {type}_confusion_matrix.png")
 
 # MONO
 create_confusion_matrix("mono")
