@@ -68,9 +68,10 @@ steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/mono
 run.pl: job failed, log is in exp/mono/log/analyze_alignments.log
 steps/diagnostic/analyze_alignments.sh: analyze_phone_length_stats.py failed, but ignoring the error (it's just for diagnostics)
 steps/diagnostic/analyze_alignments.sh: see stats in exp/mono/log/analyze_alignments.log
-1755 warnings in exp/mono/log/update.*.log
-47408 warnings in exp/mono/log/align.*.*.log
-exp/mono: nj=1 align prob=-69.37 over 0.01h [retry=0.0%, fail=95.1%] states=88 gauss=220
+567 warnings in exp/mono/log/update.*.log
+949 warnings in exp/mono/log/align.*.*.log
+585 warnings in exp/mono/log/acc.*.*.log
+exp/mono: nj=1 align prob=-85.05 over 0.11h [retry=1.2%, fail=1.0%] states=88 gauss=996
 steps/train_mono.sh: Done training monophone system in exp/mono
 
 ===== MONO DECODING =====
@@ -79,60 +80,60 @@ WARNING: the --mono, --left-biphone and --quinphone options are now deprecated a
 tree-info exp/mono/tree 
 tree-info exp/mono/tree 
 fstpushspecial 
+fstminimizeencoded 
 fstdeterminizestar --use-log=true 
 fsttablecompose data/lang/L_disambig.fst data/lang/G.fst 
-fstminimizeencoded 
 fstisstochastic data/lang/tmp/LG.fst 
 3.28279e-05 2.28e-05
-fstcomposecontext --context-size=1 --central-position=0 --read-disambig-syms=data/lang/phones/disambig.int --write-disambig-syms=data/lang/tmp/disambig_ilabels_1_0.int data/lang/tmp/ilabels_1_0.5685 data/lang/tmp/LG.fst 
+fstcomposecontext --context-size=1 --central-position=0 --read-disambig-syms=data/lang/phones/disambig.int --write-disambig-syms=data/lang/tmp/disambig_ilabels_1_0.int data/lang/tmp/ilabels_1_0.14835 data/lang/tmp/LG.fst 
 fstisstochastic data/lang/tmp/CLG_1_0.fst 
 3.28279e-05 2.28e-05
 make-h-transducer --disambig-syms-out=exp/mono/graph/disambig_tid.int --transition-scale=1.0 data/lang/tmp/ilabels_1_0 exp/mono/tree exp/mono/final.mdl 
-fstminimizeencoded 
 fstrmepslocal 
-fsttablecompose exp/mono/graph/Ha.fst data/lang/tmp/CLG_1_0.fst 
 fstrmsymbols exp/mono/graph/disambig_tid.int 
+fstminimizeencoded 
 fstdeterminizestar --use-log=true 
+fsttablecompose exp/mono/graph/Ha.fst data/lang/tmp/CLG_1_0.fst 
 fstisstochastic exp/mono/graph/HCLGa.fst 
-0.000237238 -0.000304616
+0.000242348 -0.000398383
 add-self-loops --self-loop-scale=0.1 --reorder=true exp/mono/final.mdl exp/mono/graph/HCLGa.fst 
 steps/decode.sh --config conf/decode.config --nj 1 --cmd run.pl exp/mono/graph data/test exp/mono/decode
 decode.sh: feature type is delta
 steps/diagnostic/analyze_lats.sh --cmd run.pl exp/mono/graph exp/mono/decode
 run.pl: job failed, log is in exp/mono/decode/log/analyze_alignments.log
 exp/mono/decode/wer_10
-%WER 66.07 [ 220 / 333, 2 ins, 145 del, 73 sub ]
-%SER 66.07 [ 220 / 333 ]
+%WER 6.01 [ 20 / 333, 2 ins, 6 del, 12 sub ]
+%SER 6.01 [ 20 / 333 ]
 exp/mono/decode/wer_11
-%WER 66.67 [ 222 / 333, 2 ins, 148 del, 72 sub ]
-%SER 66.67 [ 222 / 333 ]
+%WER 5.71 [ 19 / 333, 2 ins, 6 del, 11 sub ]
+%SER 5.71 [ 19 / 333 ]
 exp/mono/decode/wer_12
-%WER 66.67 [ 222 / 333, 2 ins, 150 del, 70 sub ]
-%SER 66.67 [ 222 / 333 ]
+%WER 5.71 [ 19 / 333, 1 ins, 6 del, 12 sub ]
+%SER 5.71 [ 19 / 333 ]
 exp/mono/decode/wer_13
-%WER 68.47 [ 228 / 333, 2 ins, 156 del, 70 sub ]
-%SER 68.47 [ 228 / 333 ]
+%WER 5.41 [ 18 / 333, 0 ins, 6 del, 12 sub ]
+%SER 5.41 [ 18 / 333 ]
 exp/mono/decode/wer_14
-%WER 70.87 [ 236 / 333, 2 ins, 166 del, 68 sub ]
-%SER 70.87 [ 236 / 333 ]
+%WER 5.11 [ 17 / 333, 0 ins, 6 del, 11 sub ]
+%SER 5.11 [ 17 / 333 ]
 exp/mono/decode/wer_15
-%WER 71.77 [ 239 / 333, 2 ins, 170 del, 67 sub ]
-%SER 71.77 [ 239 / 333 ]
+%WER 5.41 [ 18 / 333, 0 ins, 6 del, 12 sub ]
+%SER 5.41 [ 18 / 333 ]
 exp/mono/decode/wer_16
-%WER 72.37 [ 241 / 333, 2 ins, 175 del, 64 sub ]
-%SER 72.37 [ 241 / 333 ]
+%WER 6.31 [ 21 / 333, 0 ins, 9 del, 12 sub ]
+%SER 6.31 [ 21 / 333 ]
 exp/mono/decode/wer_17
-%WER 72.97 [ 243 / 333, 2 ins, 180 del, 61 sub ]
-%SER 72.97 [ 243 / 333 ]
+%WER 7.21 [ 24 / 333, 0 ins, 12 del, 12 sub ]
+%SER 7.21 [ 24 / 333 ]
 exp/mono/decode/wer_7
-%WER 65.47 [ 218 / 333, 2 ins, 143 del, 73 sub ]
-%SER 65.47 [ 218 / 333 ]
+%WER 6.91 [ 23 / 333, 5 ins, 4 del, 14 sub ]
+%SER 6.91 [ 23 / 333 ]
 exp/mono/decode/wer_8
-%WER 65.47 [ 218 / 333, 2 ins, 143 del, 73 sub ]
-%SER 65.47 [ 218 / 333 ]
+%WER 6.61 [ 22 / 333, 4 ins, 4 del, 14 sub ]
+%SER 6.61 [ 22 / 333 ]
 exp/mono/decode/wer_9
-%WER 65.77 [ 219 / 333, 2 ins, 144 del, 73 sub ]
-%SER 65.77 [ 219 / 333 ]
+%WER 6.61 [ 22 / 333, 4 ins, 4 del, 14 sub ]
+%SER 6.61 [ 22 / 333 ]
 
 ===== MONO ALIGNMENT =====
 

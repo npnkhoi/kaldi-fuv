@@ -1,5 +1,5 @@
 # compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/test/utt2dur.1 --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/test/wav_test.1.scp ark:- | copy-feats --write-num-frames=ark,t:exp/make_mfcc/test/utt2num_frames.1 --compress=true ark:- ark,scp:/home/cs398/kaldi/egs/kaldi-fuv/mfcc/raw_mfcc_test.1.ark,/home/cs398/kaldi/egs/kaldi-fuv/mfcc/raw_mfcc_test.1.scp 
-# Started at Thứ ba, 17 Tháng 5 năm 2022 11:04:12 +07
+# Started at Thứ ba, 17 Tháng 5 năm 2022 12:22:11 +07
 #
 copy-feats --write-num-frames=ark,t:exp/make_mfcc/test/utt2num_frames.1 --compress=true ark:- ark,scp:/home/cs398/kaldi/egs/kaldi-fuv/mfcc/raw_mfcc_test.1.ark,/home/cs398/kaldi/egs/kaldi-fuv/mfcc/raw_mfcc_test.1.scp 
 compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/test/utt2dur.1 --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/test/wav_test.1.scp ark:- 
@@ -483,4 +483,4 @@ VLOG[2] (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:182) P
 LOG (compute-mfcc-feats[5.5.1023~1-d673]:main():compute-mfcc-feats.cc:185)  Done 333 out of 333 utterances.
 LOG (copy-feats[5.5.1023~1-d673]:main():copy-feats.cc:143) Copied 333 feature matrices.
 # Accounting: time=1 threads=1
-# Ended (code 0) at Thứ ba, 17 Tháng 5 năm 2022 11:04:13 +07, elapsed time 1 seconds
+# Ended (code 0) at Thứ ba, 17 Tháng 5 năm 2022 12:22:12 +07, elapsed time 1 seconds

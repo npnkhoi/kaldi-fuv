@@ -1,20 +1,12 @@
 # acc-tree-stats --ci-phones=1:2:3:4:5:6:7:8:9:10 exp/mono_ali/final.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:gunzip -c exp/mono_ali/ali.1.gz|" exp/tri1/1.treeacc 
-# Started at Thứ ba, 17 Tháng 5 năm 2022 11:04:31 +07
+# Started at Thứ ba, 17 Tháng 5 năm 2022 12:22:48 +07
 #
 acc-tree-stats --ci-phones=1:2:3:4:5:6:7:8:9:10 exp/mono_ali/final.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:gunzip -c exp/mono_ali/ali.1.gz|' exp/tri1/1.treeacc 
-add-deltas ark:- ark:- 
 apply-cmvn --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- 
-ERROR (apply-cmvn[5.5.1023~1-d673]:ApplyCmvn():cmvn.cc:70) Dim mismatch: cmvn 2x14, feats 0x0
-
-[ Stack-Trace: ]
-/home/cs398/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0x793) [0x7f0b907431c3]
-apply-cmvn(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x55eb247a3215]
-/home/cs398/kaldi/src/lib/libkaldi-transform.so(kaldi::ApplyCmvn(kaldi::MatrixBase<double> const&, bool, kaldi::MatrixBase<float>*)+0x1b1) [0x7f0b9084fd38]
-apply-cmvn(main+0xa71) [0x55eb247a19fa]
-/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f0b90339083]
-apply-cmvn(_start+0x2e) [0x55eb247a0ece]
-
-kaldi::KaldiFatalErrorLOG (acc-tree-stats[5.5.1023~1-d673]:main():acc-tree-stats.cc:118) Accumulated stats for 110 files, 0 failed due to no alignment, 0 failed for other reasons.
-LOG (acc-tree-stats[5.5.1023~1-d673]:main():acc-tree-stats.cc:121) Number of separate stats (context-dependent states) is 128
+add-deltas ark:- ark:- 
+LOG (acc-tree-stats[5.5.1023~1-d673]:main():acc-tree-stats.cc:101) Processed 1000 utterances.
+LOG (apply-cmvn[5.5.1023~1-d673]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 1555 utterances, errors on 0
+LOG (acc-tree-stats[5.5.1023~1-d673]:main():acc-tree-stats.cc:118) Accumulated stats for 1540 files, 15 failed due to no alignment, 0 failed for other reasons.
+LOG (acc-tree-stats[5.5.1023~1-d673]:main():acc-tree-stats.cc:121) Number of separate stats (context-dependent states) is 185
 # Accounting: time=0 threads=1
-# Ended (code 0) at Thứ ba, 17 Tháng 5 năm 2022 11:04:31 +07, elapsed time 0 seconds
+# Ended (code 0) at Thứ ba, 17 Tháng 5 năm 2022 12:22:48 +07, elapsed time 0 seconds

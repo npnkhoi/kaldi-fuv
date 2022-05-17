@@ -7,9 +7,6 @@ steps/train_deltas.sh: building the tree
 WARNING (gmm-init-model[5.5.1023~1-d673]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 1 with no stats; corresponding phone list: 6 7 8 9 10 
 WARNING (gmm-init-model[5.5.1023~1-d673]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 2 with no stats; corresponding phone list: 11 12 13 14 
 WARNING (gmm-init-model[5.5.1023~1-d673]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 3 with no stats; corresponding phone list: 15 16 17 18 
-WARNING (gmm-init-model[5.5.1023~1-d673]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 18 with no stats; corresponding phone list: 75 76 77 78 
-WARNING (gmm-init-model[5.5.1023~1-d673]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 19 with no stats; corresponding phone list: 79 80 81 82 
-WARNING (gmm-init-model[5.5.1023~1-d673]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 25 with no stats; corresponding phone list: 103 104 105 106 
 WARNING (gmm-init-model[5.5.1023~1-d673]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 27 with no stats; corresponding phone list: 111 112 113 114 
 ** The warnings above about 'no stats' generally mean you have phones **
 ** (or groups of phones) in your phone set that had no corresponding data. **
@@ -59,65 +56,68 @@ steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri1
 run.pl: job failed, log is in exp/tri1/log/analyze_alignments.log
 steps/diagnostic/analyze_alignments.sh: analyze_phone_length_stats.py failed, but ignoring the error (it's just for diagnostics)
 steps/diagnostic/analyze_alignments.sh: see stats in exp/tri1/log/analyze_alignments.log
-41 warnings in exp/tri1/log/init_model.log
-3 warnings in exp/tri1/log/build_tree.log
-6465 warnings in exp/tri1/log/align.*.*.log
+99 warnings in exp/tri1/log/align.*.*.log
 1 warnings in exp/tri1/log/mixup.log
-7 warnings in exp/tri1/log/questions.log
-366 warnings in exp/tri1/log/update.*.log
-exp/tri1: nj=1 align prob=-69.16 over 0.01h [retry=0.0%, fail=95.1%] states=49 gauss=189 tree-impr=5.35
+510 warnings in exp/tri1/log/acc.*.*.log
+4 warnings in exp/tri1/log/questions.log
+875 warnings in exp/tri1/log/update.*.log
+3 warnings in exp/tri1/log/build_tree.log
+15 warnings in exp/tri1/log/init_model.log
+exp/tri1: nj=1 align prob=-81.11 over 0.11h [retry=1.1%, fail=1.0%] states=97 gauss=1954 tree-impr=4.81
 steps/train_deltas.sh: Done training system with delta+delta-delta features in exp/tri1
 
 ===== TRI1 (first triphone pass) DECODING =====
 
 tree-info exp/tri1/tree 
 tree-info exp/tri1/tree 
-fstcomposecontext --context-size=3 --central-position=1 --read-disambig-syms=data/lang/phones/disambig.int --write-disambig-syms=data/lang/tmp/disambig_ilabels_3_1.int data/lang/tmp/ilabels_3_1.7878 data/lang/tmp/LG.fst 
+fstcomposecontext --context-size=3 --central-position=1 --read-disambig-syms=data/lang/phones/disambig.int --write-disambig-syms=data/lang/tmp/disambig_ilabels_3_1.int data/lang/tmp/ilabels_3_1.17034 data/lang/tmp/LG.fst 
 fstisstochastic data/lang/tmp/CLG_3_1.fst 
 3.28279e-05 0
 make-h-transducer --disambig-syms-out=exp/tri1/graph/disambig_tid.int --transition-scale=1.0 data/lang/tmp/ilabels_3_1 exp/tri1/tree exp/tri1/final.mdl 
-fstminimizeencoded 
-fstrmsymbols exp/tri1/graph/disambig_tid.int 
-fsttablecompose exp/tri1/graph/Ha.fst data/lang/tmp/CLG_3_1.fst 
-fstdeterminizestar --use-log=true 
 fstrmepslocal 
+fstdeterminizestar --use-log=true 
+fstrmsymbols exp/tri1/graph/disambig_tid.int 
+fstminimizeencoded 
+fsttablecompose exp/tri1/graph/Ha.fst data/lang/tmp/CLG_3_1.fst 
 fstisstochastic exp/tri1/graph/HCLGa.fst 
-0.000212194 -0.000401673
+0.00027232 -0.000452822
 add-self-loops --self-loop-scale=0.1 --reorder=true exp/tri1/final.mdl exp/tri1/graph/HCLGa.fst 
 steps/decode.sh --config conf/decode.config --nj 1 --cmd run.pl exp/tri1/graph data/test exp/tri1/decode
 decode.sh: feature type is delta
 steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri1/graph exp/tri1/decode
 run.pl: job failed, log is in exp/tri1/decode/log/analyze_alignments.log
 exp/tri1/decode/wer_10
-%WER 74.77 [ 249 / 333, 3 ins, 155 del, 91 sub ]
-%SER 74.77 [ 249 / 333 ]
+%WER 15.92 [ 53 / 333, 4 ins, 9 del, 40 sub ]
+%SER 15.92 [ 53 / 333 ]
 exp/tri1/decode/wer_11
-%WER 74.47 [ 248 / 333, 2 ins, 157 del, 89 sub ]
-%SER 74.47 [ 248 / 333 ]
+%WER 15.62 [ 52 / 333, 4 ins, 9 del, 39 sub ]
+%SER 15.62 [ 52 / 333 ]
 exp/tri1/decode/wer_12
-%WER 75.68 [ 252 / 333, 0 ins, 163 del, 89 sub ]
-%SER 75.68 [ 252 / 333 ]
+%WER 14.71 [ 49 / 333, 4 ins, 10 del, 35 sub ]
+%SER 14.71 [ 49 / 333 ]
 exp/tri1/decode/wer_13
-%WER 76.58 [ 255 / 333, 0 ins, 169 del, 86 sub ]
-%SER 76.58 [ 255 / 333 ]
+%WER 14.71 [ 49 / 333, 3 ins, 10 del, 36 sub ]
+%SER 14.71 [ 49 / 333 ]
 exp/tri1/decode/wer_14
-%WER 78.08 [ 260 / 333, 0 ins, 178 del, 82 sub ]
-%SER 78.08 [ 260 / 333 ]
+%WER 14.71 [ 49 / 333, 3 ins, 10 del, 36 sub ]
+%SER 14.71 [ 49 / 333 ]
 exp/tri1/decode/wer_15
-%WER 78.38 [ 261 / 333, 0 ins, 181 del, 80 sub ]
-%SER 78.38 [ 261 / 333 ]
+%WER 15.32 [ 51 / 333, 3 ins, 12 del, 36 sub ]
+%SER 15.32 [ 51 / 333 ]
 exp/tri1/decode/wer_16
-%WER 78.98 [ 263 / 333, 0 ins, 187 del, 76 sub ]
-%SER 78.98 [ 263 / 333 ]
+%WER 15.02 [ 50 / 333, 2 ins, 12 del, 36 sub ]
+%SER 15.02 [ 50 / 333 ]
 exp/tri1/decode/wer_17
-%WER 79.28 [ 264 / 333, 0 ins, 191 del, 73 sub ]
-%SER 79.28 [ 264 / 333 ]
+%WER 14.71 [ 49 / 333, 2 ins, 12 del, 35 sub ]
+%SER 14.71 [ 49 / 333 ]
 exp/tri1/decode/wer_7
-%WER 74.47 [ 248 / 333, 8 ins, 142 del, 98 sub ]
-%SER 73.57 [ 245 / 333 ]
+%WER 17.42 [ 58 / 333, 10 ins, 9 del, 39 sub ]
+%SER 17.42 [ 58 / 333 ]
 exp/tri1/decode/wer_8
-%WER 75.08 [ 250 / 333, 7 ins, 145 del, 98 sub ]
-%SER 74.17 [ 247 / 333 ]
+%WER 17.12 [ 57 / 333, 8 ins, 9 del, 40 sub ]
+%SER 17.12 [ 57 / 333 ]
 exp/tri1/decode/wer_9
-%WER 75.68 [ 252 / 333, 6 ins, 150 del, 96 sub ]
-%SER 75.08 [ 250 / 333 ]
+%WER 15.62 [ 52 / 333, 4 ins, 9 del, 39 sub ]
+%SER 15.62 [ 52 / 333 ]
+
+===== run.sh script is finished =====

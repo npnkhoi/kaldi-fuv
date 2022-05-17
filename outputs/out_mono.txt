@@ -1,14 +1,14 @@
-S_S17_W_ba_01 bảy 
-S_S17_W_ba_02 bảy 
-S_S17_W_ba_03 
-S_S17_W_ba_04 bảy 
-S_S17_W_ba_05 bảy 
-S_S17_W_ba_06 bảy 
-S_S17_W_ba_07 
+S_S17_W_ba_01 ba 
+S_S17_W_ba_02 ba hai 
+S_S17_W_ba_03 ba 
+S_S17_W_ba_04 ba hai 
+S_S17_W_ba_05 ba 
+S_S17_W_ba_06 ba hai 
+S_S17_W_ba_07 ba 
 S_S17_W_ba_08 tám 
-S_S17_W_ba_09 
-S_S17_W_ba_10 tám 
-S_S17_W_ba_11 tám 
+S_S17_W_ba_09 tám 
+S_S17_W_ba_10 ba ba 
+S_S17_W_ba_11 ba 
 S_S17_W_bayr_01 bảy 
 S_S17_W_bayr_02 bảy 
 S_S17_W_bayr_03 bảy 
@@ -18,41 +18,41 @@ S_S17_W_bayr_06 bảy
 S_S17_W_bayr_07 bảy 
 S_S17_W_bayr_08 bảy 
 S_S17_W_bayr_09 bảy 
-S_S17_W_boons_01 một 
-S_S17_W_boons_02 một 
+S_S17_W_boons_01 bốn 
+S_S17_W_boons_02 bốn 
 S_S17_W_chins_01 chín 
 S_S17_W_chins_02 chín 
 S_S17_W_chins_03 chín 
 S_S17_W_chins_04 chín 
-S_S17_W_hai_01 tám 
-S_S17_W_hai_02 
-S_S17_W_hai_03 
-S_S17_W_hai_04 
-S_S17_W_hai_05 bảy 
-S_S17_W_hai_06 
-S_S17_W_hai_07 tám 
-S_S17_W_hai_08 
+S_S17_W_hai_01 hai 
+S_S17_W_hai_02 hai 
+S_S17_W_hai_03 hai 
+S_S17_W_hai_04 hai 
+S_S17_W_hai_05 hai 
+S_S17_W_hai_06 hai 
+S_S17_W_hai_07 hai 
+S_S17_W_hai_08 hai 
 S_S17_W_hai_09 hai 
-S_S17_W_hai_10 bảy 
-S_S17_W_lawm_01 một 
-S_S17_W_ler_01 
-S_S17_W_mootj_01 
+S_S17_W_hai_10 hai 
+S_S17_W_lawm_01 lăm 
+S_S17_W_ler_01 mươi 
+S_S17_W_mootj_01 mốt 
 S_S17_W_mootj_02 một 
 S_S17_W_mootj_03 một 
-S_S17_W_mootj_04 một 
-S_S17_W_mootj_05 một 
+S_S17_W_mootj_04 mốt 
+S_S17_W_mootj_05 mốt 
 S_S17_W_mootj_06 một 
-S_S17_W_moots_01 một 
+S_S17_W_moots_01 mốt 
 S_S17_W_muowi_01 mươi 
 S_S17_W_muowi_02 mươi 
 S_S17_W_muowi_03 mươi 
-S_S17_W_muowi_04 
-S_S17_W_muowi_05 
-S_S17_W_muowi_06 
-S_S17_W_muowi_07 
-S_S17_W_muowi_08 
-S_S17_W_muowi_09 
-S_S17_W_muowi_10 
+S_S17_W_muowi_04 mươi 
+S_S17_W_muowi_05 mươi 
+S_S17_W_muowi_06 mươi 
+S_S17_W_muowi_07 mươi 
+S_S17_W_muowi_08 mươi 
+S_S17_W_muowi_09 mươi 
+S_S17_W_muowi_10 mươi 
 S_S17_W_muowi_11 mươi 
 S_S17_W_muowi_12 mươi 
 S_S17_W_muowi_13 mươi 
@@ -63,63 +63,63 @@ S_S17_W_muowi_17 mươi
 S_S17_W_muowi_18 mươi 
 S_S17_W_muowi_19 mươi 
 S_S17_W_muowi_20 mươi 
-S_S17_W_muowi_21 
+S_S17_W_muowi_21 mươi 
 S_S17_W_muowif_01 mươi 
 S_S17_W_nawm_01 năm 
 S_S17_W_nawm_02 năm 
 S_S17_W_nawm_03 năm 
 S_S17_W_saus_01 sáu 
-S_S17_W_saus_02 sáu một 
+S_S17_W_saus_02 sáu 
 S_S17_W_saus_03 sáu 
 S_S17_W_saus_04 sáu 
 S_S17_W_saus_05 sáu 
 S_S17_W_saus_06 sáu 
 S_S17_W_saus_07 sáu 
-S_S17_W_saus_08 
+S_S17_W_saus_08 sáu 
 S_S17_W_saus_09 sáu 
-S_S17_W_saus_10 sáu 
+S_S17_W_saus_10 sáu mươi 
 S_S17_W_saus_11 sáu 
-S_S17_W_tams_01 năm 
+S_S17_W_tams_01 tám 
 S_S17_W_tams_02 tám 
-S_S17_W_tams_03 năm 
-S_S17_W_tams_04 
-S_S17_W_tams_05 
-S_S17_W_tams_06 
-S_S17_W_tams_07 
-S_S17_W_tams_08 năm 
-S_S17_W_trawm_01 
-S_S17_W_trawm_02 năm 
-S_S17_W_trawm_03 
-S_S17_W_trawm_04 
-S_S17_W_trawm_05 chín 
-S_S17_W_trawm_06 năm 
-S_S17_W_trawm_07 năm 
-S_S17_W_trawm_08 
-S_S17_W_trawm_09 
-S_S17_W_trawm_10 
-S_S17_W_trawm_11 năm 
-S_S17_W_trawm_12 năm 
-S_S17_W_trawm_13 năm 
-S_S17_W_trawm_14 năm 
-S_S17_W_trawm_15 
-S_S17_W_trawm_16 
-S_S17_W_trawm_17 
-S_S17_W_trawm_18 
-S_S17_W_trawm_19 năm 
-S_S17_W_trawm_20 năm 
-S_S17_W_trawm_21 sáu 
-S_S17_W_trawm_22 năm 
-S_S19_W_ba_01 bảy 
-S_S19_W_ba_02 bảy 
-S_S19_W_ba_03 
-S_S19_W_ba_04 bảy 
-S_S19_W_ba_05 bảy 
-S_S19_W_ba_06 ba 
-S_S19_W_ba_07 
+S_S17_W_tams_03 tám 
+S_S17_W_tams_04 tám 
+S_S17_W_tams_05 tám 
+S_S17_W_tams_06 tám 
+S_S17_W_tams_07 tám 
+S_S17_W_tams_08 tám 
+S_S17_W_trawm_01 trăm 
+S_S17_W_trawm_02 trăm 
+S_S17_W_trawm_03 trăm 
+S_S17_W_trawm_04 tám 
+S_S17_W_trawm_05 trăm 
+S_S17_W_trawm_06 trăm 
+S_S17_W_trawm_07 trăm 
+S_S17_W_trawm_08 trăm 
+S_S17_W_trawm_09 trăm 
+S_S17_W_trawm_10 trăm 
+S_S17_W_trawm_11 tám 
+S_S17_W_trawm_12 trăm 
+S_S17_W_trawm_13 trăm 
+S_S17_W_trawm_14 trăm 
+S_S17_W_trawm_15 trăm 
+S_S17_W_trawm_16 trăm 
+S_S17_W_trawm_17 trăm 
+S_S17_W_trawm_18 trăm 
+S_S17_W_trawm_19 trăm 
+S_S17_W_trawm_20 trăm 
+S_S17_W_trawm_21 trăm 
+S_S17_W_trawm_22 trăm 
+S_S19_W_ba_01 ba 
+S_S19_W_ba_02 ba hai 
+S_S19_W_ba_03 ba 
+S_S19_W_ba_04 ba hai 
+S_S19_W_ba_05 ba 
+S_S19_W_ba_06 ba hai 
+S_S19_W_ba_07 ba 
 S_S19_W_ba_08 tám 
-S_S19_W_ba_09 
-S_S19_W_ba_10 tám 
-S_S19_W_ba_11 tám 
+S_S19_W_ba_09 ba 
+S_S19_W_ba_10 ba ba 
+S_S19_W_ba_11 ba 
 S_S19_W_bayr_01 bảy 
 S_S19_W_bayr_02 bảy 
 S_S19_W_bayr_03 bảy 
@@ -129,41 +129,41 @@ S_S19_W_bayr_06 bảy
 S_S19_W_bayr_07 bảy 
 S_S19_W_bayr_08 bảy 
 S_S19_W_bayr_09 bảy 
-S_S19_W_boons_01 một 
-S_S19_W_boons_02 một 
+S_S19_W_boons_01 bốn 
+S_S19_W_boons_02 bốn 
 S_S19_W_chins_01 chín 
 S_S19_W_chins_02 chín 
 S_S19_W_chins_03 chín 
 S_S19_W_chins_04 chín 
-S_S19_W_hai_01 tám 
-S_S19_W_hai_02 
-S_S19_W_hai_03 
-S_S19_W_hai_04 
-S_S19_W_hai_05 bảy 
-S_S19_W_hai_06 
-S_S19_W_hai_07 tám 
-S_S19_W_hai_08 
+S_S19_W_hai_01 hai 
+S_S19_W_hai_02 hai 
+S_S19_W_hai_03 hai 
+S_S19_W_hai_04 hai 
+S_S19_W_hai_05 hai 
+S_S19_W_hai_06 hai 
+S_S19_W_hai_07 hai 
+S_S19_W_hai_08 hai 
 S_S19_W_hai_09 hai 
-S_S19_W_hai_10 
-S_S19_W_lawm_01 một 
-S_S19_W_ler_01 
-S_S19_W_mootj_01 
+S_S19_W_hai_10 hai 
+S_S19_W_lawm_01 lăm 
+S_S19_W_ler_01 mươi 
+S_S19_W_mootj_01 mốt 
 S_S19_W_mootj_02 một 
 S_S19_W_mootj_03 một 
-S_S19_W_mootj_04 một 
-S_S19_W_mootj_05 một 
+S_S19_W_mootj_04 mốt 
+S_S19_W_mootj_05 mốt 
 S_S19_W_mootj_06 một 
-S_S19_W_moots_01 một 
+S_S19_W_moots_01 mốt 
 S_S19_W_muowi_01 mươi 
 S_S19_W_muowi_02 mươi 
 S_S19_W_muowi_03 mươi 
-S_S19_W_muowi_04 
-S_S19_W_muowi_05 
-S_S19_W_muowi_06 
-S_S19_W_muowi_07 
-S_S19_W_muowi_08 
-S_S19_W_muowi_09 
-S_S19_W_muowi_10 
+S_S19_W_muowi_04 mươi 
+S_S19_W_muowi_05 mươi 
+S_S19_W_muowi_06 mươi 
+S_S19_W_muowi_07 mươi 
+S_S19_W_muowi_08 mươi 
+S_S19_W_muowi_09 mươi 
+S_S19_W_muowi_10 mươi 
 S_S19_W_muowi_11 mươi 
 S_S19_W_muowi_12 mươi 
 S_S19_W_muowi_13 mươi 
@@ -174,63 +174,63 @@ S_S19_W_muowi_17 mươi
 S_S19_W_muowi_18 mươi 
 S_S19_W_muowi_19 mươi 
 S_S19_W_muowi_20 mươi 
-S_S19_W_muowi_21 
+S_S19_W_muowi_21 mươi 
 S_S19_W_muowif_01 mươi 
 S_S19_W_nawm_01 năm 
 S_S19_W_nawm_02 năm 
 S_S19_W_nawm_03 năm 
 S_S19_W_saus_01 sáu 
-S_S19_W_saus_02 sáu một 
+S_S19_W_saus_02 sáu 
 S_S19_W_saus_03 sáu 
 S_S19_W_saus_04 sáu 
 S_S19_W_saus_05 sáu 
 S_S19_W_saus_06 sáu 
 S_S19_W_saus_07 sáu 
-S_S19_W_saus_08 
+S_S19_W_saus_08 sáu 
 S_S19_W_saus_09 sáu 
-S_S19_W_saus_10 sáu 
+S_S19_W_saus_10 sáu mươi 
 S_S19_W_saus_11 sáu 
 S_S19_W_tams_01 tám 
 S_S19_W_tams_02 tám 
-S_S19_W_tams_03 năm 
-S_S19_W_tams_04 
-S_S19_W_tams_05 
-S_S19_W_tams_06 
-S_S19_W_tams_07 
-S_S19_W_tams_08 năm 
-S_S19_W_trawm_01 
-S_S19_W_trawm_02 năm 
-S_S19_W_trawm_03 
-S_S19_W_trawm_04 
-S_S19_W_trawm_05 chín 
-S_S19_W_trawm_06 năm 
-S_S19_W_trawm_07 năm 
-S_S19_W_trawm_08 
-S_S19_W_trawm_09 
-S_S19_W_trawm_10 
-S_S19_W_trawm_11 năm 
-S_S19_W_trawm_12 năm 
-S_S19_W_trawm_13 năm 
-S_S19_W_trawm_14 năm 
-S_S19_W_trawm_15 
-S_S19_W_trawm_16 
-S_S19_W_trawm_17 
-S_S19_W_trawm_18 
-S_S19_W_trawm_19 năm 
-S_S19_W_trawm_20 năm 
-S_S19_W_trawm_21 sáu 
-S_S19_W_trawm_22 năm 
-S_S22_W_ba_01 bảy 
-S_S22_W_ba_02 tám 
-S_S22_W_ba_03 
-S_S22_W_ba_04 tám 
+S_S19_W_tams_03 tám 
+S_S19_W_tams_04 tám 
+S_S19_W_tams_05 tám 
+S_S19_W_tams_06 tám 
+S_S19_W_tams_07 tám 
+S_S19_W_tams_08 tám 
+S_S19_W_trawm_01 trăm 
+S_S19_W_trawm_02 trăm 
+S_S19_W_trawm_03 trăm 
+S_S19_W_trawm_04 tám 
+S_S19_W_trawm_05 trăm 
+S_S19_W_trawm_06 trăm 
+S_S19_W_trawm_07 trăm 
+S_S19_W_trawm_08 trăm 
+S_S19_W_trawm_09 trăm 
+S_S19_W_trawm_10 trăm 
+S_S19_W_trawm_11 trăm 
+S_S19_W_trawm_12 trăm 
+S_S19_W_trawm_13 trăm 
+S_S19_W_trawm_14 trăm 
+S_S19_W_trawm_15 trăm 
+S_S19_W_trawm_16 trăm 
+S_S19_W_trawm_17 trăm 
+S_S19_W_trawm_18 trăm 
+S_S19_W_trawm_19 trăm 
+S_S19_W_trawm_20 trăm 
+S_S19_W_trawm_21 trăm 
+S_S19_W_trawm_22 trăm 
+S_S22_W_ba_01 ba 
+S_S22_W_ba_02 ba 
+S_S22_W_ba_03 ba 
+S_S22_W_ba_04 ba 
 S_S22_W_ba_05 ba 
-S_S22_W_ba_06 tám 
-S_S22_W_ba_07 
+S_S22_W_ba_06 ba 
+S_S22_W_ba_07 bảy 
 S_S22_W_ba_08 
-S_S22_W_ba_09 
-S_S22_W_ba_10 tám 
-S_S22_W_ba_11 tám 
+S_S22_W_ba_09 ba 
+S_S22_W_ba_10 ba 
+S_S22_W_ba_11 ba 
 S_S22_W_bayr_01 bảy 
 S_S22_W_bayr_02 bảy 
 S_S22_W_bayr_03 bảy 
@@ -239,95 +239,95 @@ S_S22_W_bayr_05 bảy
 S_S22_W_bayr_06 bảy 
 S_S22_W_bayr_07 bảy 
 S_S22_W_bayr_08 bảy 
-S_S22_W_bayr_09 
-S_S22_W_boons_01 một 
-S_S22_W_boons_02 
+S_S22_W_bayr_09 bảy 
+S_S22_W_boons_01 mốt 
+S_S22_W_boons_02 một 
 S_S22_W_chins_01 chín 
 S_S22_W_chins_02 chín 
 S_S22_W_chins_03 chín 
-S_S22_W_chins_04 
-S_S22_W_hai_01 tám mươi 
-S_S22_W_hai_02 tám bảy 
-S_S22_W_hai_03 bảy 
-S_S22_W_hai_04 
-S_S22_W_hai_05 bảy 
-S_S22_W_hai_06 
+S_S22_W_chins_04 chín 
+S_S22_W_hai_01 hai mươi 
+S_S22_W_hai_02 hai 
+S_S22_W_hai_03 hai 
+S_S22_W_hai_04 hai 
+S_S22_W_hai_05 hai 
+S_S22_W_hai_06 hai 
 S_S22_W_hai_07 hai 
-S_S22_W_hai_08 bảy 
-S_S22_W_hai_09 
-S_S22_W_hai_10 
-S_S22_W_lawm_01 một 
-S_S22_W_ler_01 bảy 
-S_S22_W_mootj_01 một 
+S_S22_W_hai_08 hai 
+S_S22_W_hai_09 hai 
+S_S22_W_hai_10 hai 
+S_S22_W_lawm_01 lăm 
+S_S22_W_ler_01 lẻ 
+S_S22_W_mootj_01 mốt 
 S_S22_W_mootj_02 một 
 S_S22_W_mootj_03 
 S_S22_W_mootj_04 
-S_S22_W_mootj_05 
-S_S22_W_mootj_06 
-S_S22_W_moots_01 một 
+S_S22_W_mootj_05 một 
+S_S22_W_mootj_06 một 
+S_S22_W_moots_01 mốt 
 S_S22_W_muowi_01 mươi 
 S_S22_W_muowi_02 mươi 
 S_S22_W_muowi_03 mươi 
-S_S22_W_muowi_04 
-S_S22_W_muowi_05 
+S_S22_W_muowi_04 mươi 
+S_S22_W_muowi_05 mươi 
 S_S22_W_muowi_06 mươi 
-S_S22_W_muowi_07 
-S_S22_W_muowi_08 
+S_S22_W_muowi_07 mươi 
+S_S22_W_muowi_08 mươi 
 S_S22_W_muowi_09 mươi 
-S_S22_W_muowi_10 
-S_S22_W_muowi_11 
-S_S22_W_muowi_12 
-S_S22_W_muowi_13 
-S_S22_W_muowi_14 
-S_S22_W_muowi_15 
+S_S22_W_muowi_10 mươi 
+S_S22_W_muowi_11 mươi 
+S_S22_W_muowi_12 mươi 
+S_S22_W_muowi_13 mươi 
+S_S22_W_muowi_14 mươi 
+S_S22_W_muowi_15 mươi 
 S_S22_W_muowi_16 mươi 
 S_S22_W_muowi_17 mươi 
-S_S22_W_muowi_18 
-S_S22_W_muowi_19 
-S_S22_W_muowi_20 một 
-S_S22_W_muowi_21 
+S_S22_W_muowi_18 mươi 
+S_S22_W_muowi_19 mươi 
+S_S22_W_muowi_20 mươi 
+S_S22_W_muowi_21 mươi 
 S_S22_W_muowif_01 mươi 
 S_S22_W_nawm_01 năm 
 S_S22_W_nawm_02 năm 
-S_S22_W_nawm_03 
+S_S22_W_nawm_03 năm 
 S_S22_W_saus_01 sáu 
 S_S22_W_saus_02 sáu 
 S_S22_W_saus_03 sáu 
 S_S22_W_saus_04 sáu 
 S_S22_W_saus_05 sáu 
-S_S22_W_saus_06 
-S_S22_W_saus_07 
-S_S22_W_saus_08 
-S_S22_W_saus_09 
-S_S22_W_saus_10 
-S_S22_W_saus_11 tám 
-S_S22_W_tams_01 tám 
-S_S22_W_tams_02 tám 
-S_S22_W_tams_03 
+S_S22_W_saus_06 sáu 
+S_S22_W_saus_07 sáu 
+S_S22_W_saus_08 sáu 
+S_S22_W_saus_09 sáu 
+S_S22_W_saus_10 sáu 
+S_S22_W_saus_11 sáu 
+S_S22_W_tams_01 bốn 
+S_S22_W_tams_02 ba 
+S_S22_W_tams_03 tám 
 S_S22_W_tams_04 tám 
 S_S22_W_tams_05 tám 
-S_S22_W_tams_06 
-S_S22_W_tams_07 
-S_S22_W_tams_08 
-S_S22_W_trawm_01 tám 
-S_S22_W_trawm_02 tám 
-S_S22_W_trawm_03 một 
-S_S22_W_trawm_04 
-S_S22_W_trawm_05 
-S_S22_W_trawm_06 năm 
-S_S22_W_trawm_07 
-S_S22_W_trawm_08 
-S_S22_W_trawm_09 
-S_S22_W_trawm_10 
-S_S22_W_trawm_11 
-S_S22_W_trawm_12 
-S_S22_W_trawm_13 
-S_S22_W_trawm_14 
-S_S22_W_trawm_15 
-S_S22_W_trawm_16 
-S_S22_W_trawm_17 
-S_S22_W_trawm_18 
-S_S22_W_trawm_19 
-S_S22_W_trawm_20 
-S_S22_W_trawm_21 
-S_S22_W_trawm_22 
+S_S22_W_tams_06 tám 
+S_S22_W_tams_07 tám 
+S_S22_W_tams_08 tám 
+S_S22_W_trawm_01 trăm 
+S_S22_W_trawm_02 trăm 
+S_S22_W_trawm_03 trăm 
+S_S22_W_trawm_04 trăm 
+S_S22_W_trawm_05 trăm 
+S_S22_W_trawm_06 trăm 
+S_S22_W_trawm_07 trăm 
+S_S22_W_trawm_08 trăm 
+S_S22_W_trawm_09 trăm 
+S_S22_W_trawm_10 trăm 
+S_S22_W_trawm_11 trăm 
+S_S22_W_trawm_12 trăm 
+S_S22_W_trawm_13 trăm 
+S_S22_W_trawm_14 trăm 
+S_S22_W_trawm_15 trăm 
+S_S22_W_trawm_16 năm 
+S_S22_W_trawm_17 trăm 
+S_S22_W_trawm_18 trăm 
+S_S22_W_trawm_19 trăm 
+S_S22_W_trawm_20 trăm 
+S_S22_W_trawm_21 trăm 
+S_S22_W_trawm_22 trăm 

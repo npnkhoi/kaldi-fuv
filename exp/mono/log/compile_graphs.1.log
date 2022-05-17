@@ -1,29 +1,7 @@
 # compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/mono/tree exp/mono/0.mdl data/lang/L.fst "ark:sym2int.pl --map-oov 16 -f 2- data/lang/words.txt < data/train/split1/1/text|" "ark:|gzip -c >exp/mono/fsts.1.gz" 
-# Started at Thứ ba, 17 Tháng 5 năm 2022 11:04:15 +07
+# Started at Thứ ba, 17 Tháng 5 năm 2022 12:22:12 +07
 #
 compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/mono/tree exp/mono/0.mdl data/lang/L.fst 'ark:sym2int.pl --map-oov 16 -f 2- data/lang/words.txt < data/train/split1/1/text|' 'ark:|gzip -c >exp/mono/fsts.1.gz' 
-sym2int.pl: replacing sil with 16
-sym2int.pl: replacing sil with 16
-sym2int.pl: replacing sil with 16
-sym2int.pl: replacing sil with 16
-sym2int.pl: replacing sil with 16
-sym2int.pl: replacing sil with 16
-sym2int.pl: replacing sil with 16
-sym2int.pl: replacing sil with 16
-sym2int.pl: replacing sil with 16
-sym2int.pl: replacing sil with 16
-sym2int.pl: replacing sil with 16
-sym2int.pl: replacing sil with 16
-sym2int.pl: replacing sil with 16
-sym2int.pl: replacing sil with 16
-sym2int.pl: replacing sil with 16
-sym2int.pl: replacing sil with 16
-sym2int.pl: replacing sil with 16
-sym2int.pl: replacing sil with 16
-sym2int.pl: replacing sil with 16
-sym2int.pl: replacing sil with 16
-sym2int.pl: not warning for OOVs any more times
-** Replaced 345 instances of OOVs with 16
-LOG (compile-train-graphs[5.5.1023~1-d673]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 2264 graphs, failed for 0
+LOG (compile-train-graphs[5.5.1023~1-d673]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 1555 graphs, failed for 0
 # Accounting: time=1 threads=1
-# Ended (code 0) at Thứ ba, 17 Tháng 5 năm 2022 11:04:16 +07, elapsed time 1 seconds
+# Ended (code 0) at Thứ ba, 17 Tháng 5 năm 2022 12:22:13 +07, elapsed time 1 seconds
